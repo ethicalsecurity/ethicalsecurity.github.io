@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Ethical Security - Chi Siamo</title>
+    <title>ETHSEC - Ethical Hacking</title>
 
     <link rel="stylesheet" href="css/icons/entypo/css/entypo.css">
     <link rel="stylesheet" href="css/flexslider.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+<body class=" " id="ethicalHacking">
 
 <div id="boxedWrapper">
 
@@ -41,7 +41,7 @@
           </ul>
         </div>
         <!-- / nav-collapse -->
-		  <ul class="menuIcon pull-right">
+        <ul class="menuIcon pull-right">
           <li class="twitter"><a href="https://www.twitter.com/ethsec" target="_blank">facebook</a></li>
           <li class="facebook"><a href="https://facebook.com/ethsec" target="_blank">twitter</a></li>
         </ul>
@@ -54,132 +54,75 @@
 <div class="container">
 
 
-    <div class="row-fluid">
-        <div class="span12">
-            <div class="titleBox">
-                <h1 class="huge">Chi Siamo
-				
-               <span>
-                   La sicurezza non e' un prodotto, ma un processo ciclico evolutivo. Noi possiamo aiutarvi a costruirlo.
-               </span>
-                </h1>
+<div class="row-fluid">
+    <div class="span12">
+        <!-- ********************* -->
+        <!-- title Box *********** -->
+        <div class="titleBox">
+            <h1 class="huge">ethical hacking
+
+            <span>E' facile violare la tua infrastruttura informatica?
+            </span>
+            </h1>
+        </div>
+        <!-- *********************** -->
+        <!-- / title Box *********** -->
+
+    </div>
+</div>
+
+<!-- precedente
+<div class="row-fluid">
+    <div class="span12">
+        <div class="lineBox short">
+            <div class="inner">
+                <a href="#" class="btn btn-icon left">
+                   <span class="entypo left-open-mini"><i></i></span>
+                   precedente
+               </a>
+                <a href="#" class="btn btn-icon right btn-primary">
+                   successivo
+                   <span class="entypo right-open-mini"><i></i></span>
+               </a>
+
             </div>
         </div>
     </div>
-    <!-- / row-fluid -->
+</div>
+ / successivo -->
+<br>
+<div class="row-fluid">
+    <div class="span8">
+        <a href="#"><img src="images/content/code.jpg" alt=" " class="easyFrame"></a>
 
-
-     <div class="row-fluid">
-        <div class="span12">
-            <div class="lineBox right">
-                <div class="inner">
-                    <a href="index.html" class="btn metaIcon" data-toggle="tooltip" title="Home"><span class="entypo home"><i></i>Home</span></a>
-                    <a href="#" class="btn btn-icon left btn-primary"><span class="entypo vcard"><i></i></span>Chi Siamo</a>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- / row-fluid -->
+    <div class="span4">
+        <div class="portfolioDetails">
 
-    <div class="row-fluid topSpace">
-        <div class="span8">
-            <h3 class="subTitle">Ethical Security</h3>
+           <span class="entypo monitor metaText"><i></i>Ethical Hacking</span>
+           <h3 class="light">Penetration test & Vulnerability Assessment</h3>
             <p>
-                Ethical Security è un progetto di tre giovani professionisti bresciani con una decennale esperienza nell'ambito sistemistico, delle reti e della sicurezza informatica.<br>
-                I nostri servizi sono pensati per rendere la sicurezza informatica un processo usabile, capace di evidenziare problemi e anomalie senza impattare negativamente sui processi aziendali esistenti.<br>								
-            </p>
-
-        </div>
-        <div class="span4">
-            <img src="images/content/photo1.jpg" alt="" class="easyFrame flat">
-
-        </div>
-    </div>
-    <!-- / row-fluid -->
-    
-
-    <div class="row-fluid">
-        <div class="span12">
-            <h3 class="subTitle">Il Team</h3>
+                Con un attacco informatico mirato cerchiamo problemi di sicurezza e ti diamo le soluzioni.
+           </p>
+            <br>
+            <!-- <p><span class="entypo user metaText"><i></i>ThemeForest</span></p>
+            <p><span class="entypo calendar metaText"><i></i>2013 February</span></p>
+            <p><span class="entypo tools metaText"><i></i>Seo, Web Development, Web Design</span></p>
+            <br>
+            <p>
+                <a href="#"><span class="entypo globe dark metaText"><i></i>www.inviatemplate.com</span></a>
+            </p> -->
         </div>
     </div>
-    <!-- / row-fluid -->
-    <br>
-
-    <div class="row-fluid" style="min-height:300px;">
-        
-            <div class="span4">
-                <div class="">
-                    
-                    <h4 class="std">Roberto Bonetti</h4>
-                    <i> Ethical Hacking </i>
-                    <p> Penetration Test, Vulnerability Assessment e Incident Response.  </p>
-                    <ul class="smallSocials">                     
-                        <li><a href="#" data-toggle="tooltip" title="Twitter"><span class="entypo twitter-circled"><i></i></span></a></li>
-                        <li><a href="#" data-toggle="tooltip" title="Skype"><span class="entypo skype-circled"><i></i></span></a></li>
-                    </ul>
-                </div>
-                <!-- / personBox -->
-            </div>
-            <div class="span4">
-                <div class="">
-                    
-                    <h4 class="std">Marco Bulgarini</h4>
-                    <i>Systems &amp; Networking</i>
-                    <p>
-                        Sistemista certificato Cisco e Microsoft.
-                    </p>
-                    <ul class="smallSocials">
-                        <li><a href="#" data-toggle="tooltip" title="Facebook"><span class="entypo facebook-circled"><i></i></span></a></li>
-                        <li><a href="#" data-toggle="tooltip" title="Twitter"><span class="entypo twitter-circled"><i></i></span></a></li>
-                        <li><a href="#" data-toggle="tooltip" title="LinkedIn"><span class="entypo linkedin-circled"><i></i></span></a></li>
-
-                    </ul>
-                </div>
-                <!-- / personBox -->
-            </div>
-
-            <div class="span4">
-                <div class="">
-                    <h4 class="std">Francesco Acchiappati</h4>
-                    <i>Systems & Forensics</i>
-                    <p>
-                        Attivo nel settore Legal e Forensics.
-                    </p>
-                    <ul class="smallSocials">                     
-                        <li><a href="#" data-toggle="tooltip" title="Twitter"><span class="entypo twitter-circled"><i></i></span></a></li>
-                        <li><a href="#" data-toggle="tooltip" title="LinkedIn"><span class="entypo linkedin-circled"><i></i></span></a></li>
-                    </ul>
-                </div>
-                <!-- / personBox -->
-            </div>
-        </div>
-        <!-- / row-fluid -->
-
-    <div class="row-fluid">
-        <div class="span12">
-            <div class="easyBox buttonBox">
-                <p class="bigger">
-                    <a href="contatti.html" class="btn btn-primary pull-right">Contattaci</a>
-                    Vuoi conoscerci meglio? Scrivici per organizzare un incontro conoscitivo.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- / row-fluid -->
-
-    </div>
-
-
+</div>
 </div>
 <!-- /  container -->
 
 
-  <!-- footer -->
-  <div id="footer">
+<div id="footer">
     <div class="container">
       <div class="row-fluid">
-        <div class="span2" id="socialStuff">
+        <div class="span2">
           <h4 class="medium">Social</h4>
           <!-- ************************** --> 
           <!-- socialIcons **************** -->
@@ -255,6 +198,9 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.contenthover.min.js"></script>
+
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.quicksand.js"></script>
 
 
 
