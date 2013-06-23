@@ -8513,12 +8513,29 @@ li.dropdown:hover .dropdown-menu {
   background: #600;
   color: #fff;
   font-weight: 600;
-  padding: 35px 40px;
+  /*padding: 35px 40px;*/
+  padding: 0px;
   width: 333px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+/* custom */
+.contactInfoBox .innerBox {
+  padding: 20px 40px;
+}
+
+.contactInfoBox .logoBox {
+  background-color: #FFF;
+}
+
+.pplTeam {
+  min-height: 150px;
+}
+
+
 .contactInfoBox strong {
   font-size: 22px;
   line-height: 27px;

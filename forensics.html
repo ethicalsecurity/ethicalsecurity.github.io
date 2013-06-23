@@ -41,10 +41,7 @@
           </ul>
         </div>
         <!-- / nav-collapse -->
-              <ul class="menuIcon pull-right">
-          <li class="twitter"><a href="https://www.twitter.com/ethsec" target="_blank">facebook</a></li>
-          <li class="facebook"><a href="https://facebook.com/ethsec" target="_blank">twitter</a></li>
-        </ul>
+              
 	  </div>
     </div>
   </div>
@@ -212,17 +209,66 @@
 <!-- /  container -->
 
 
-<  <div id="footer">
+  <div id="footer">
     <div class="container">
       <div class="row-fluid">
-        <div class="span2">
-          <h4 class="medium">Social</h4>        
+        <div class="span2" id="socialStuff">
+          <h4 class="medium">Social</h4>
+          <!-- ************************** --> 
+          <!-- socialIcons **************** -->
           <ul class="socialIcons">
-            <li><a href="https://www.facebook.com/ethsec" class="entypo facebook-squared"><i></i>facebook</a><a href="https://www.twitter.com/ethsec" class="entypo twitter"><i></i>twitter</a> <a href="https://www.linkedin.com/company/ethical-security" class="entypo linkedin"><i></i>linkedin</a> <a href="callto://ethsec" class="entypo skype"><i></i>skype</a></li>
+            <li><a href="https://facebook.com/ethsec" target=_blank class="entypo facebook-squared"><i></i>facebook</a></li>
+            <li><a href="https://twitter.com/ethsec" target=_blank  class="entypo twitter"><i></i>twitter</a></li>
+            <li><a href="https://www.linkedin.com/company/ethical-security" target=_blank  class="entypo linkedin"><i></i>linkedin</a></li>
+            <li><a href="skype:ethsec?call" class="entypo skype"><i></i>skype</a></li>
+          </ul>
+          <!-- ************************** --> 
+          <!-- / socialIcons **************** --> 
+          
+        </div>
+        <div class="span6">
+          <h4 class="medium">Ultimi Tweet</h4>
+          <div class="twitterBox">
+          <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+            <p><span class="author">@ethsec</span>          
+            <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline/ethsec.json?callback=twitterCallback2&amp;count=2"></script>
+            </p>
+          </div>
+        </div>
+        <div class="span4">
+          <h4 class="medium">Citazioni</h4>
+          
+          <!-- *************************************************************************** --> 
+          <!-- Fade Flex Slider ********************************************************** --> 
+          <!-- any content, option: add class "centerNav" to fadeFlex to center navigation -->
+          <div class="flexslider fadeFlex">
+            <ul class="slides">
+              <li>
+                <blockquote>
+                  <p>Securing a computer system has traditionally been a <strong>battle of wits</strong>: the penetrator tries to find the holes, and the designer tries to close them. </p>
+                  <span class="author"> Morrie Gasser </span> </blockquote>
+              </li>
+              
+              <li>
+                <blockquote>
+                  <p> The user's going to pick <strong>dancing pigs</strong> over security every time. </p>
+                  <span class="author"> Bruce Schneier </span> </blockquote>
+              </li>
+              
+              <li>
+                <blockquote>
+                <p>There are risks and costs to a program of action--but they are far less than the long range cost of <strong>comfortable inaction</strong>.</p>
+                  <span class="author"> John F. Kennedy </span> </blockquote>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- ***************************************************************************** --> 
+          <!-- / Fade Flex Slider ********************************************************** --> 
+          
         </div>
       </div>
     </div>
-	
     <div class="footNotes">
       <div class="container">
         <div class="row-fluid">
