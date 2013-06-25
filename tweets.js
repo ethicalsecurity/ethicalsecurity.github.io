@@ -49,18 +49,18 @@ e[a].textContent+"</p>",m&&(b+='<p class="timePosted">'+f[a].textContent+"</p>")
 // A simple example to get my latest tweet and write to a HTML element with
 // id "tweets". Also automatically hyperlinks URLS and user mentions and
 // hashtags.
-twitterFetcher.fetch('345170787868762112', 'tweets', 1, true);
+twitterFetcher.fetch('340461085675114496', 'tweets', 1, true);
 // ##### Simple example 2 #####
 // A simple example to get my latest 5 of my favourite tweets and write to a HTML
 // element with id "talk". Also automatically hyperlinks URLS and user mentions and
 // hashtags but does not display time of post.
-twitterFetcher.fetch('347099293930377217', 'talk', 5, true, true, false);
+twitterFetcher.fetch('340461085675114496', 'talk', 5, true, true, false);
 // ##### Advanced example #####
 // An advance example to get latest 5 posts using hashtag #API and write to a
 // HTML element with id "tweets2" without showing user details and using a
 // custom format to display the date/time of the post, and does not show
 // retweets.
-twitterFetcher.fetch('345690956013633536', 'tweets2', 5, true, false, true, dateFormatter, false);
+twitterFetcher.fetch('340461085675114496', 'tweets2', 5, true, false, true, dateFormatter, false);
 // For advanced example which allows you to customize how tweet time is
 // formatted you simply define a function which takes a JavaScript date as a
 // parameter and returns a string!
