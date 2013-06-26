@@ -9210,6 +9210,7 @@ input[type="submit"].btn.btn-mini {
 }
 .flexslider.mainslider li > div {
   background-position: top center;
+  background-repeat: no-repeat;
 }
 .flexslider.mainslider li .container {
   position: relative;
