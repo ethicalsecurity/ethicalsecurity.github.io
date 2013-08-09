@@ -8100,6 +8100,7 @@ li.dropdown:hover .dropdown-menu {
 .titleBox {
   margin: 50px 0 20px 0;
 }
+
 .titleBox span {
   font-weight: 300;
   font-size: 18px;
@@ -8110,6 +8111,20 @@ li.dropdown:hover .dropdown-menu {
   max-width: 500px;
   padding-top: 5px;
 }
+
+/* EDIT: forensics */
+
+.forensics .titleBox span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 26px;
+  text-transform: none;
+  display: inline-block;
+  max-width: 500px;
+  padding-top: 5px;
+}
+
 .easyBox {
   min-height: 50px;
   background: #fff;
