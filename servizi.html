@@ -20,34 +20,28 @@
 <div id="boxedWrapper">
 
 <!-- navbar -->
-  <div class="navbar navbar-static-top">
+   <div class="navbar navbar-static-top">
     <div class="navbar-inner">
       <div class="container">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="brand" href="index.html"><img src="images/eth-logo-color.png" style="width:200px;" alt="ETHSEC"/></a>
+        <a class="brand" href="index.html"><img src="images/logo_ethsec_single.png" style="width:300px;" alt="ETHSEC" /></a>
         <div class="nav-collapse">
           <ul class="nav pull-left">
             <li> <a href="index.html">Home</a> </li>
-            <li> <a href="chi.html">Chi Siamo</a> </li>
-            <li class="dropdown"> <a href="servizi.html" class="dropdown-toggle">Servizi</a>
+            <li class="dropdown active"> <a href="servizi.html" class="dropdown-toggle">Servizi</a>
               <ul class="dropdown-menu">
-                <li><a href="isaas.html">ISaaS</a> </li>
-                <li><a href="ethical-hacking.html">Ethical Hacking</a></li>
-                <li><a href="swh.html">Secure Web Hosting</a></li>
-                <li><a href="forensics.html">Forensics</a></li>
-                <li><a href="formazione.html">Formazione</a></li>
+                <li><a href="penetration-testing.html">Penetration Testing</a> </li>
+                <li><a href="application-security.html">Application Security</a></li>
+                <li><a href="iot-security.html">IoT Security</a></li>
+                <li><a href="forensics.html">Digital Forensics</a></li>
               </ul>
             </li>
-            <li> <a href="partners.html">Partners</a> </li>
             <li> <a href="contatti.html">Contatti</a> </li>
           </ul>
         </div>
-        <!-- / nav-collapse -->
-		        
-	  </div>
+      </div>
     </div>
   </div>
-
 
 <!-- main container -->
 <div class="container">
@@ -59,8 +53,8 @@
         <!-- title Box *********** -->
         <div class="titleBox">
         <h1 class="huge">servizi
-
-            <span>Soluzioni per ogni ambito e dimensione. 
+	<br/>
+            <span>Il nostro core business. 
             </span>
         </h1>
         </div>
@@ -87,75 +81,52 @@
 
 <div class="row-fluid">
     <div class="span12">
-        <div class="lineBox short">
-            <div class="inner">
-                <ul class="filterPortfolio">
-                    <!--<li data-filter="pmi"><a href="#" class="btn metaIcon" data-toggle="tooltip" title="PMI"><span class="entypo mobile"><i></i>PMI</span></a></li>-->
-                    <li data-filter="pmi"><a href="#" class="btn" data-toggle="tooltip" title="Servizi per PMI"><span class="entypo mobile"><i></i>PMI</span></a></li>
-                    <li data-filter="web-agencies"><a href="#" class="btn" data-toggle="tooltip" title="Servizi per Web Agencies e E-commerce"><span class="entypo monitor"><i></i>Web Agencies</span></a></li>
-                    <li data-filter="legal"><a href="#" class="btn" data-toggle="tooltip" title="Servizi per Avvocatura e Giustizia"><span class="entypo graduation-cap"><i></i>Legal</span></a></li>
-                    <li data-filter="enterprise"><a href="#" class="btn" data-toggle="tooltip" title="Servizi per P.A. ed Enterprise"><span class="entypo flow-tree"><i></i>Enterprise</span></a></li>
-                    <li class="active"><a href="#" class="btn">visualizza tutti</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <ul class="portfolioList col3" id="portfolio1">
-            <li data-id="1" data-filter="pmi enterprise">
+        <ul class="portfolioList col3" id="portfolio1">     
+            <li data-id="2" data-filter="web-agencies enterprise">
                 <div class="easyBox">
-                    <a href="#"><img src="images/thumbs/thumb-isaas.jpg" alt=" "></a>
+                    <a href="#"><img src="images/thumbs/thumb-pentest.png" alt=" "></a>
                     <div class="inner">
-                        <span style="font-size: 12px; font-style:italic"><i>La sicurezza informatica in outsourcing</i></span>
-                        <h3 class="light"><a href="isaas.html">Information Security As-a-Service</a></h3>
-                        <p>Una soluzione che copre tutti gli aspetti di sicurezza informatica della tua azienda, dalla A alla Z.
+                        <span style="font-size: 12px; font-style:italic"><i>Avrebbe successo un attacco alla tua rete?</i></span>
+                        <h3 class="light"><a href="penetration-testing.html">Penetration Testing</a></h3>
+                        <p>Siamo specializzati nel simulare attacchi reali per evidenziare i punti deboli della vostra infrastruttura informatica.
                         </p>
                     </div>
                 </div>
-            </li>
-            <li data-id="2" data-filter="web-agencies enterprise">
+            </li>            
+	    <li data-id="3" data-filter="legal web-agencies">
                 <div class="easyBox">
                     <a href="#"><img src="images/thumbs/thumb-code.jpg" alt=" "></a>
                     <div class="inner">
-                        <span style="font-size: 12px; font-style:italic"><i>Test di intrusione e analisi delle vulnerabilità</i></span>
-                        <h3 class="light"><a href="ethical-hacking.html">Ethical Hacking</a></h3>
-                        <p>Con un attacco informatico mirato, effettuato in ambiente controllato, cerchiamo problemi di sicurezza e ti diamo le soluzioni. Non aspettare che sia troppo tardi.
+                        <span style="font-size: 12px; font-style:italic"><i>Analizziamo qualsiasi software</i></span>
+                        <h3 class="light"><a href="forensics.html">Application Security</a></h3>
+                        <p>Troviamo vulnerabilità nei vostri software, che siano applicazioni web, mobile o applicativi binari.
                         </p>
                     </div>
                 </div>
-            </li>
-            <li data-id="3" data-filter="web-agencies enterprise">
+            </li>          
+            <li data-id="1" data-filter="legal web-agencies">
                 <div class="easyBox">
-                    <a href="#"><img src="images/thumbs/thumb-swh.jpg" alt=" "></a>
+                    <a href="#"><img src="images/thumbs/thumb-iot.jpg" alt=" "></a>
                     <div class="inner">
-                        <span style="font-size: 12px; font-style:italic"><i>Servizi di hosting gestito e sicuro</i></span>
-                        <h3 class="light"><a href="swh.html">Secure Web Hosting</a></h3>
-                        <p>Uno spazio web dedicato per il tuo business online, monitorato e fornito di sistemi anti intrusione personalizzati. Stabilità a prova di bomba.
+                        <span style="font-size: 12px; font-style:italic"><i>Sono sicuri i vostri apparati IoT?</i></span>
+                        <h3 class="light"><a href="forensics.html">IoT Security</a></h3>
+                        <p>Analizziamo e valutiamo la sicurezza su apparati hardware su piattaforme x86, ARM e MIPS.
                         </p>
                     </div>
                 </div>
-            </li>
+            </li>   
+
             <li data-id="4" data-filter="legal web-agencies">
                 <div class="easyBox">
                     <a href="#"><img src="images/thumbs/thumb-forensics.jpg" alt=" "></a>
                     <div class="inner">
-                        <span style="font-size: 12px; font-style:italic"><i>Perizie, consulenze tecniche e recupero dati</i></span>
+                        <span style="font-size: 12px; font-style:italic"><i>Perizie e consulenze tecniche</i></span>
                         <h3 class="light"><a href="forensics.html">Forensics</a></h3>
-                        <p>Uno staff con anni di esperienza certificata nel settore, operante in un laboratorio tecnico all'avanguardia operante con procedure standard ed un rigoroso codice etico.
+                        <p>Uno staff con anni di esperienza certificata nel settore, operante in un laboratorio tecnico all'avanguardia, con procedure standard ed un rigoroso codice etico.
                         </p>
                     </div>
                 </div>
-            </li>
-            <li data-id="5" data-filter="pmi enterprise legal">
-                <div class="easyBox">
-                    <a href="#"><img src="images/thumbs/thumb-formazione.jpg" alt=" "></a>
-                    <div class="inner">
-                        <span style="font-size: 12px; font-style:italic"><i>Corsi di formazione personalizzati</i></span>
-                        <h3 class="light"><a href="formazione.html">Formazione</a></h3>
-                        <p>Corsi di formazione e aggiornamento su tutte le tematiche sistemistiche e di sicurezza informatica, non rimanere indietro.
-                        </p>
-                    </div>
-                </div>
-            </li>
+            </li>  
         </ul>
     </div>
 </div>
@@ -167,86 +138,6 @@
 </div>
 <!-- /  container -->
 
-
-
-<div id="footer">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span2">
-          <h4 class="medium">Social</h4>
-          <!-- ************************** --> 
-          <!-- socialIcons **************** -->
-          <ul class="socialIcons">
-            <li><a href="https://facebook.com/ethsec" target=_blank class="entypo facebook-squared"><i></i>facebook</a></li>
-            <li><a href="https://twitter.com/ethsec" target=_blank  class="entypo twitter"><i></i>twitter</a></li>
-            <li><a href="https://www.linkedin.com/company/ethical-security" target=_blank  class="entypo linkedin"><i></i>linkedin</a></li>
-            <li><a href="skype:ethsec?call" class="entypo skype"><i></i>skype</a></li>
-          </ul>
-          <!-- ************************** --> 
-          <!-- / socialIcons **************** --> 
-          
-        </div>
-      <div class="span6">
-          <h4 class="medium">Ultimi Tweet</h4>
-          <div class="twitterBox">
-	  <script src="tweets.js"></script> 
-		<div id="tweets"></div>
-          </div>
-        </div>
-        <div class="span4">
-         
-          <h4 class="medium">Citazioni</h4>
-          
-          <!-- *************************************************************************** --> 
-          <!-- Fade Flex Slider ********************************************************** --> 
-          <!-- any content, option: add class "centerNav" to fadeFlex to center navigation -->
-          <div class="flexslider fadeFlex">
-            <ul class="slides">
-              <li>
-                <blockquote>
-                  <p>Securing a computer system has traditionally been a <strong>battle of wits</strong>: the penetrator tries to find the holes, and the designer tries to close them. </p>
-                  <span class="author"> Morrie Gasser </span> </blockquote>
-              </li>
-              
-              <li>
-                <blockquote>
-                  <p> The user's going to pick <strong>dancing pigs</strong> over security every time. </p>
-                  <span class="author"> Bruce Schneier </span> </blockquote>
-              </li>
-              
-              <li>
-                <blockquote>
-                <p>There are risks and costs to a program of action--but they are far less than the long range cost of <strong>comfortable inaction</strong>.</p>
-                  <span class="author"> John F. Kennedy </span> </blockquote>
-              </li>
-              
-            </ul>
-          </div>
-          <!-- ***************************************************************************** --> 
-          <!-- / Fade Flex Slider ********************************************************** --> 
-          
-        
-        </div>
-      </div>
-    </div>
-    <div class="footNotes">
-      <div class="container">
-        <div class="row-fluid">
-          <div class="span4">
-            <p><a href="#"></a></p>
-          </div>
-          <div class="span8 doRight">
-            <p>© 2015 Ethical Security </p>
-          </div>
-        </div>
-        <!-- / row-fluid --> 
-      </div>
-    </div>
-    <!-- / footNotes --> 
-  </div>
-<!-- / footer -->
-
-<a href="#" id="toTop" class="entypo up-open"><i></i> Back to top</a>
 </div>
 <!-- / boxedWrapper -->
 
@@ -254,15 +145,37 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.contenthover.min.js"></script>
-
 <script src="js/jquery.easing.js"></script>
 <script src="js/jquery.quicksand.js"></script>
-
-
-
 <script src="js/main.js"></script>
-
+  <!-- footer -->
+  <div id="footer">
+    <div class="container">
+      <div class="row-fluid">        
+        <div class="span4">
+        </div>
+      </div>
+    </div>
+    <div class="footNotes">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4">
+   	   <div class="span8 doLeft">
+		info@ethsec.com, +39 030 7777 253
+	   </div>	
+          </div>
+          <div class="span8 doRight">
+            <p>© 2019 Ethical Security </p>
+          </div>
+        </div>
+        <!-- / row-fluid --> 
+      </div>
+    </div>
+    <!-- / footNotes --> 
+  </div>
+  <!-- / footer --> 
 
 
 </body>
 </html>
+

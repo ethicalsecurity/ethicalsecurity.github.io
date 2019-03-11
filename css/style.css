@@ -240,6 +240,9 @@ a:hover {
 .span1 {
   width: 60px;
 }
+foot{
+ height: 50px;
+}
 .offset12 {
   margin-left: 980px;
 }
@@ -3113,7 +3116,7 @@ button.close {
 }
 .btn:active,
 .btn.active {
-  background-color: #cccccc \9;
+  background-color: #e6e6e6 \9;
 }
 .btn:first-child {
   *margin-left: 0;
@@ -3218,9 +3221,9 @@ input[type="button"].btn-block {
   border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
 }
 .btn-primary {
-  color: #fff;
+  color: #600;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-  background-color: #ff7c38;
+  background-color: #ffffff;
   background-image: -moz-linear-gradient(top,#600,#ffa338);
   background-image: -webkit-gradient(linear,0 0,0 100%,from(#600),to(#ffa338));
   background-image: -webkit-linear-gradient(top,#600,#ffa338);
@@ -3230,7 +3233,7 @@ input[type="button"].btn-block {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff600', endColorstr='#ffffa338', GradientType=0);
   border-color: #ffa338 #ffa338 #eb7e00;
   border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-  *background-color: #ffa338;
+  *background-color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* Darken IE7 buttons by default so they stand out more given they won't have borders */
@@ -4150,7 +4153,7 @@ input[type="submit"].btn.btn-mini {
   min-height: 60px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #fafafa;
+  background-color: #ffffff;
   background-image: -moz-linear-gradient(top,#ffffff,#f2f2f2);
   background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#f2f2f2));
   background-image: -webkit-linear-gradient(top,#ffffff,#f2f2f2);
@@ -4196,6 +4199,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
   display: block;
   padding: 18px 20px 18px;
+  padding-top: 25px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4397,7 +4401,7 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-  background-color: #ededed;
+  background-color: #ffffff;
   background-image: -moz-linear-gradient(top,#f2f2f2,#e6e6e6);
   background-image: -webkit-gradient(linear,0 0,0 100%,from(#f2f2f2),to(#e6e6e6));
   background-image: -webkit-linear-gradient(top,#f2f2f2,#e6e6e6);
@@ -4494,7 +4498,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #e6e6e6;
-  color: #555;
+  color: #600;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #777;
@@ -4557,7 +4561,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: transparent;
-  color: #fff;
+  color: #600;
 }
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
@@ -4569,7 +4573,7 @@ input[type="submit"].btn.btn-mini {
   color: #999;
 }
 .navbar-inverse .navbar-link:hover {
-  color: #fff;
+  color: #600;
 }
 .navbar-inverse .divider-vertical {
   border-left-color: #111111;
@@ -4579,7 +4583,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #111111;
-  color: #fff;
+  color: #600;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #999;
@@ -4661,7 +4665,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active {
-  background-color: #000000 \9;
+  background-color: #000000;
 }
 /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 .navbar-inverse .btn-navbar:hover,
@@ -4956,7 +4960,7 @@ input[type="submit"].btn.btn-mini {
   padding: 14px 15px 15px;
   margin-bottom: 0;
   text-align: right;
-  background-color: #f5f5f5;
+  background-color: #e6e6e6;
   border-top: 1px solid #ddd;
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
@@ -7548,6 +7552,7 @@ hr {
 /* helpers alignment */
 .doLeft {
   text-align: left;
+  font-size: 10px;
 }
 .doCenter {
   text-align: center;
@@ -7575,7 +7580,7 @@ hr {
   font-weight: 600;
 }
 .huge {
-  font-size: 48px;
+  font-size: 25px;
   line-height: 55px;
   margin-bottom: 15px;
   font-weight: 700;
@@ -7911,7 +7916,7 @@ ul.menuIcon .search a:before {
 /* Main Menu */
 .navbar-static-top .navbar-inner {
   /* ORIGINAL: background: #ff6138; */
-  background: #600;
+  background: #ffffff;
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7926,14 +7931,15 @@ ul.menuIcon .search a:before {
   text-shadow: none;
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
+  color: #600;
   text-transform: uppercase;
   border: 0;
   margin: 0;
 }
 .navbar .nav > li:hover  > a {
   border: 0;
-  color: #fff;
+  color: #600;
+  background: #e6e6e6;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
@@ -7948,8 +7954,8 @@ ul.menuIcon .search a:before {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #fff;
-  background: none;
+  color: #600;
+  background: #c6c6c6;
 }
 .navbar .nav > li.dropdown:hover > a:before {
   content: '\e760';
@@ -8186,7 +8192,7 @@ li.dropdown:hover .dropdown-menu {
   z-index: 3;
   position: relative;
   padding: 0 45px;
-  background: #f5f5f5;
+  background: #f5f5f5f5;
 }
 .lineBox.short {
   margin: 25px 0;
@@ -8507,9 +8513,9 @@ li.dropdown:hover .dropdown-menu {
 /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 .contactMap .contactInfoBox {
   position: absolute;
-  top: 110px;
+  top: 10px; 
   left: 50%;
-  margin-left: -470px;
+  margin-left: -150px;
   z-index: 5;
 }
 .contactMap .gmap-marker i:before {
@@ -8539,7 +8545,7 @@ li.dropdown:hover .dropdown-menu {
 
 /* custom */
 .contactInfoBox .innerBox {
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .contactInfoBox .logoBox {
@@ -8549,7 +8555,16 @@ li.dropdown:hover .dropdown-menu {
 .pplTeam {
   min-height: 150px;
 }
-
+.sedi {
+ margin-left:auto;
+ margin-right:auto;
+ display:block;
+ top: -10px;
+ width: 50%;
+ height: auto;
+ position:relative;
+ 
+}
 
 .contactInfoBox strong {
   font-size: 22px;
@@ -9896,6 +9911,7 @@ ul.portfolioList:after {
 }
 ul.portfolioList li {
   padding: 0 0 20px 20px;
+  color: #a1a1a1;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -9916,7 +9932,7 @@ ul.portfolioList.col4 li {
 .portfolioDetails {
   margin-left: 20px;
 }
-.portfolioDetails p {
+.portfolioDetails p ul li {
   color: #a1a1a1;
 }
 /* Typography */
@@ -9998,7 +10014,7 @@ blockquote.simple p {
 }
 .sectionFaq .accordion-heading .accordion-toggle {
   padding: 15px 15px 15px 17px;
-  /* EDIT: originale - font-size: 18px; */
+
   line-height: 26px;
   /* EDIT: originale - font-weight: 700; */
   font-weight: 400;
@@ -10131,7 +10147,7 @@ blockquote.simple p {
 #footer .widget-inner {
   margin-bottom: 20px;
 }
-/* Blog Page */
+
 .blogContainer {
   margin-right: 40px;
   padding-bottom: 30px;
@@ -10356,14 +10372,14 @@ blockquote.simple p {
 .stylishForm.newsletter input {
   margin: 0;
 }
-/* html5 audio player */
+
 .tagcloud {
   margin-left: -10px;
 }
 .tagcloud a {
   margin: 0 0 10px 10px;
 }
-/* gmap */
+
 .google_map img {
   max-width: inherit;
 }
@@ -10487,7 +10503,7 @@ ul.commentList .oneComment:hover .metaIcon {
   padding-top: 8px;
   color: #a4a4a4;
 }
-/* responsive video */
+
 .videoFrameContainer {
   position: relative;
   padding-top: 25px;
@@ -10510,7 +10526,7 @@ ul.commentList .oneComment:hover .metaIcon {
     padding-top: 0;
   }
 }
-/* back to top link */
+
 #toTop {
   position: fixed;
   z-index: 50;
@@ -10698,7 +10714,7 @@ ul.commentList .oneComment:hover .metaIcon {
   .blogContainer {
     margin-right: 0;
   }
-/* make space after divs collapse */
+
   .container > .row-fluid > [class*="span"] {
     margin-bottom: 25px;
   }
@@ -10706,7 +10722,7 @@ ul.commentList .oneComment:hover .metaIcon {
   .footNotes p {
     margin-bottom: 0;
   }
-/*set width of boxes */
+
   .easyBox,
   .blogDigest {
     max-width: 300px;
@@ -10761,24 +10777,20 @@ ul.commentList .oneComment:hover .metaIcon {
   }
 }
 
-/* EDIT: per la pagina "ethical hacking" riduci il max titleBox */
 
 #ethicalHacking .titleBox span {
   max-width: 400px;
 }
 
-/* EDIT: per la pagina "secure web hosting" riduci il max titleBox */
 
 #secureWebHosting .titleBox span {
   max-width: 350px;
 }
 
 #servizi .easyBox {
-  /* EDIT: originale min-height: 50px; */
   min-height: 505px;
 }
 
-/* EDIT: responsive padding */
 
 @media (min-width:768px) {
 .giustificaImmagine {
@@ -10786,11 +10798,10 @@ ul.commentList .oneComment:hover .metaIcon {
 }
 }
 
-/* aumenta lunghezza minima homepage easyBox */
 
 #chisiamo .easyBox { min-height:300px; }
 
-/* aumenta lunghezza minima easyBox servizi */
+
 
 #portfolio1 .easyBox { min-height: 560px;}
 
