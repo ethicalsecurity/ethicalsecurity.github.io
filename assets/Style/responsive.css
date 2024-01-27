@@ -1,0 +1,308 @@
+
+  /* Mobile devices */
+  @media only screen and (max-width: 480px) {
+    
+    /* === Header === */
+    #logo {max-width: 190px !important; width: auto;}
+    #navbar-link-container {display: none !important;}
+    #contact-button {display: none;}
+    .service-contact-button {display: flex !important;}
+    .menu-button-link {height: 40px !important; padding-inline: 0.5rem;}
+    #lang_btn {display: none !important;}
+    
+    /* === Home === */
+    #home-text-container {width: 100% !important;}
+    #home-illustration {z-index: -1 !important; filter: opacity(0.2); top: 4rem !important; right: -11rem !important; width: 100% !important;}
+    #servicehome-illustration {z-index: -1 !important; filter: opacity(0.2); top: 4rem !important; right: -11rem !important; width: 90% !important;}
+    #s-home {padding-bottom: 8rem !important; padding-top: 12rem !important; padding-inline: 1.5rem !important;}
+    #div-rotondo {margin-top: 3rem !important;}
+    .s-home-about {padding-block: 11rem !important;}
+    .home-maintitle {font-size: min(max(55px), 18vw) !important;}
+    .service-maintitle {font-size: min(max(45px), 6vw) !important;}
+    .servicehome-maintitle {font-size: min(max(55px), 18vw) !important;}
+    .home-subtitle {font-size: min(max(20px), 5vw) !important; width: 100% !important;}
+
+    /* === Service === */
+    #s-service-showcase {display: none !important;}
+    #s-service-reference { padding-inline: 1.5rem !important;}
+    #s-service {padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: center !important; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {height: 270px; width: 100% !important;}
+    .minicard {height: 190px !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;}
+
+    /* === Rischi === */
+    .carousel-text {padding-left: 5rem;}
+    .carousel-item {padding-block: 10rem !important;}
+    #carousel-inner-rischi {border-radius: 0 !important;}
+    #s-rischi {padding-inline: 0 !important;}
+    .carousel-slide-title {padding-inline: 5rem;}
+
+    /* === Info === */
+    #s-info {padding-top: 0rem !important; padding-bottom: 8rem !important;}
+
+    /* === Chi Siamo === */
+    #s-chisiamo {padding-inline: 1.5rem !important; padding-block: 3rem !important;}
+
+    /* === Modal === */
+    #modal-content {justify-content: center !important; align-items: start !important;}
+    #modal-illustration {width: 60% !important;}
+    #modal-info { width: 100% !important;}
+
+    /* === Accordion === */
+    #accordion-service-showcase {display: block !important;}
+    .accordion {padding-inline: 1.1rem !important;}
+    .accordion-icon {padding-right: 1.1rem !important;}
+    .accordion-title {padding-inline: 1.1rem !important; padding-block: 1.1rem !important;}
+
+    /* === Footer === */
+    #footer-container {padding-inline: 1.3rem !important; row-gap: 4rem !important;}
+    .footer-box {width: 47% !important;}
+  }
+  
+  /* iPads, Tablets */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    /* === Header === */
+    #logo {width: 260px !important;}
+    #navbar-link-container {display: none !important;}
+    #contact-button {display: none;}
+    .service-contact-button {display: flex !important;}
+    .menu-button-link {height: 40px !important;}
+    #lang_btn {display: none !important;}
+    .lang_flag {max-width: 35px;}
+    
+    /* === Home === */
+    #home-text-container {width: 100% !important;}
+    #home-illustration {z-index: -1 !important; filter: opacity(0.2); top: 2rem !important; right: -12rem !important; width: 90% !important;}
+    #servicehome-illustration {z-index: -1 !important; filter: opacity(0.2); top: 2rem !important; right: -12rem !important; width: 83% !important;}
+    #s-home {padding-inline: 1.5rem !important;}
+    .home-maintitle {font-size: min(max(60px), 18vw) !important;}
+    .service-maintitle {font-size: min(max(45px), 6vw) !important;}
+    .servicehome-maintitle {font-size: min(max(60px), 18vw) !important;}
+    .home-subtitle {font-size: min(max(20px), 5vw) !important; width: 100% !important;}
+
+    /* === Service === */
+    #s-service-showcase {display: none !important;}
+    #s-service-reference {padding-inline: 1.5rem !important;}
+    #s-service { padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: center; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {height: 300px; width: 100% !important;}
+    .minicard {height: 230px !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;}
+
+    /* === Rischi === */
+    .carousel-text {padding-left: 8rem;}
+    #carousel-inner-rischi {border-radius: 0 !important;}
+    #s-rischi {padding-inline: 0 !important;}
+    .carousel-slide-title {padding-inline: 5rem;}
+
+    /* === Chi Siamo === */
+    #s-chisiamo {padding-inline: 1.5rem !important; padding-block: 5rem !important;}
+
+    /* === Modal === */
+    #modal-content {justify-content: center !important; align-items: start !important;}
+    #modal-illustration {width: 60% !important;}
+    #modal-info { width: 100% !important;}
+
+    /* === Accordion === */
+    #accordion-service-showcase {display: block !important;}
+    .accordion {padding-inline: 1.1rem !important;}
+    .accordion-icon {padding-right: 1.1rem !important;}
+    .accordion-title {padding-block: 2.1rem !important;}
+
+    /* === Footer === */
+    #footer-container {padding-inline: 3.1rem !important; row-gap: 4rem !important;}
+    .footer-box {align-items: start !important; width: 48% !important;}
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 844px) {
+
+    /* === Header === */
+    #logo {width: 260px !important;}
+    #navbar-link-container {display: none !important;}
+    #lang_btn {display: none !important;}
+    .lang_flag {max-width: 55px;}
+
+    /* === Home === */
+    #home-text-container {width: 100% !important;}
+    #home-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem !important; width : 83% !important;}
+    #servicehome-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem !important; width: 63% !important;}
+    #s-home {padding-inline: 2.1rem !important;}
+    .home-maintitle {font-size: min(max(90px), 10vw) !important;}
+    .service-maintitle {font-size: min(max(45px), 6vw) !important;}
+    .servicehome-maintitle {font-size: min(max(90px), 7vw) !important;}
+    .home-subtitle {font-size: min(max(20px), 5vw) !important;}
+
+    /* === Service === */
+    /* #s-service-showcase {display: block;}
+    #s-service-reference {padding-inline: 2.1rem !important;}
+    #s-service {padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: space-around; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {width: 46% !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;} */
+    #s-service-showcase {display: none !important;}
+    #s-service-reference {padding-inline: 1.5rem !important;}
+    #s-service { padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: center; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {height: 300px; width: 100% !important;}
+    .minicard {height: 230px !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;}
+
+    /* === Rischi === */
+    .carousel-text {padding-left: 8rem;}
+    #s-rischi {padding-inline: 1.5rem !important;}
+
+    /* === Chi Siamo === */
+    #s-chisiamo {padding-inline: 1.5rem !important; padding-block: 5rem !important;}
+
+    /* === Modal === */
+    #modal-content {justify-content: center !important; align-items: start !important;}
+    #modal-illustration {width: 60% !important;}
+    #modal-info { width: 100% !important;}
+
+    /* === Accordion === */
+    .accordion {padding-inline: 1.1rem !important;}
+    .accordion-icon {padding-right: 1.1rem !important;}
+    .accordion-title {padding-block: 2.1rem !important;}
+
+    /* === Footer === */
+    #footer-container {padding-inline: 3.1rem !important; row-gap: 4rem !important; gap: 2rem !important;}
+    .footer-box {align-items: start !important; width: 45% !important;}
+  }
+
+  @media only screen and (min-width: 845px) and (max-width: 900px) {
+    
+    /* === Header === */
+    #logo {width: 287px !important;}
+    #navbar-link-container {display: none !important;}
+    #lang_btn {display: none !important;}
+    .lang_flag {max-width: 55px;}
+    
+    /* === Home === */
+    .home-maintitle {font-size: min(max(90px), 12vw) !important;}
+    .servicehome-maintitle {font-size: min(max(90px), 7vw) !important;}
+    .home-subtitle {font-size: min(max(20px), 5vw) !important;}
+    #home-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem !important; width: 83% !important;}
+    #servicehome-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem !important; width: 63% !important;}
+
+    /* === Service === */
+    /* #s-service-showcase {display: block;}
+    #s-service {padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: space-around; row-gap: 2rem;}
+    .service-card {width: 46% !important;} */
+    /* === Service === */
+    #s-service-showcase {display: none !important;}
+    #s-service-reference {padding-inline: 1.5rem !important;}
+    #s-service { padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: center; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {height: 300px; width: 100% !important;}
+    .minicard {height: 230px !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;}
+
+    /* === Rischi === */
+    .carousel-text {padding-left: 8rem;}
+    #s-rischi {padding-inline: 1.5rem !important;}
+
+    /* === Accordion === */
+    .accordion {padding-inline: 1.1rem !important;}
+
+    /* === Chi Siamo === */
+    #s-chisiamo {padding-inline: 2.5rem !important; padding-block: 6rem !important;}
+
+    /* === Footer === */
+    #footer-container {padding-inline: 3.1rem !important; row-gap: 4rem !important; gap: 2rem !important;}
+    .footer-box {align-items: start !important; width: 45% !important;}
+  }
+  
+  /* Small screens, laptops */
+  @media only screen and (min-width: 901px) and (max-width: 1075px) {
+    
+    /* === Header === */
+    #logo {width: 287px !important;}
+    #navbar-link-container {display: none !important;}
+    #lang_btn {display: none !important;}
+    .lang_flag {max-width: 55px;}
+    
+    /* === Home === */
+    .home-maintitle {font-size: min(max(100px), 12vw) !important;}
+    .servicehome-maintitle {font-size: min(max(100px), 7vw) !important;}
+    .home-subtitle {font-size: min(max(25px), 5vw) !important;}
+    #home-text-container {width: 80% !important;}
+    #home-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem; width: 83% !important;}
+    #servicehome-illustration {z-index: -1 !important; filter: opacity(0.2); top: 1rem !important; right: -12rem !important; width: 63% !important;}
+    
+    /* === Service === */
+    /* #s-service-showcase {display: block;}
+    #s-service {padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: space-around; row-gap: 2rem;}
+    .service-card {width: 48% !important;} */
+    /* === Service === */
+    #s-service-showcase {display: none !important;}
+    #s-service-reference {padding-inline: 1.5rem !important;}
+    #s-service { padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: center; row-gap: 2rem; padding-inline: 1.5rem !important;}
+    #s-service-showcase {padding: 0.1rem !important;}
+    .service-card {height: 300px; width: 100% !important;}
+    .minicard {height: 230px !important;}
+    .service-card-link {padding-inline: 1.1rem !important; padding-bottom: 1rem !important;}
+
+    /* === Rischi === */
+    .carousel-text {padding-left: 8rem;}
+    #s-rischi {padding-inline: 1.5rem !important;}
+
+    /* === Chi Siamo === */
+    #s-chisiamo {padding-inline: 2.5rem !important; padding-block: 6rem !important;}
+
+    /* === Accordion === */
+    .accordion {padding-inline: 1.1rem !important;}
+  }
+  
+  /* Desktops, large screens */
+  @media only screen and (min-width: 1076px) and (max-width: 1200px) {
+    
+    /* === Header === */
+    #logo {width: 287px !important;}
+    .nav-link {font-size: min(max(16px), 3vw) !important;}
+    #menu-button {display: none !important;}
+
+    /* === Home === */
+    .home-maintitle {font-size: min(max(115px), 7vw) !important;}
+    .servicehome-maintitle {font-size: min(max(115px), 8vw) !important;}
+    .home-subtitle {font-size: min(max(30px), 5vw) !important;}
+    #home-text-container {width: 50% !important;}
+    #home-illustration {top: 8rem !important; right: 0 !important;}
+    #servicehome-illustration {top: 9rem !important;}
+
+    /* === Service === */
+    #s-service-showcase {display: block;}
+    #s-service {padding-inline: 1.1rem !important; flex-wrap: wrap !important; justify-content: space-around; row-gap: 2rem;}
+    .service-card {width: 48% !important;}
+
+    /* === Rischi === */
+    #s-rischi {padding-inline: 2.5rem !important;}
+
+    /* === Accordion === */
+    #accordion-service-showcase {display: none !important;}
+    .accordion {padding-inline: 1.1rem !important;}
+  }
+  
+  /* Extra large screens, TV */
+  @media only screen and (min-width: 1201px) {
+    
+    /* === Header === */
+    #menu-button {display: none !important;}
+
+    /* === Service === */
+    #s-service-showcase {display: block;}
+    .service-card {width: 48%;}
+    .minicard {width: 49% !important;}
+
+    /* === Home === */
+    #home-text-container {width: 50% !important;}
+    #home-illustration {max-width: 50rem; right: 0 !important;}
+    #servicehome-illustration {max-width: 40rem; top: 6.5rem !important;}
+    .servicehome-maintitle {font-size: min(max(110px), 8vw) !important;}
+
+    /* === Accordion === */
+    #accordion-service-showcase {display: none !important;}
+    
+  }
+  

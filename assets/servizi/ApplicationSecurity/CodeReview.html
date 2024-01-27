@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ethical Security - Code Review</title>
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/Style/mainstyle.css">
+    <link rel="stylesheet" href="/assets/Style/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--- icons
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--- fonts
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/Fonts/Kollektif/stylesheet.css">
+    
+
+    <!-- script
+    ================================================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/assets/LogoDefinitivo/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Sezione Principale -->
+    <section>
+        
+        <!-- div Menu laterale -->
+        <div class="offcanvas offcanvas-start overflow-auto w-100" tabindex="1" id="menuLaterale" aria-labelledby="menuLateraleLabel" style="z-index: 9999; background-position: center; background-repeat: no-repeat; background-size: cover;">
+            
+            <a id="menu-button" data-bs-toggle="offcanvas" href="#menuLaterale" role="button" aria-controls="menuLaterale" style="width: min-content; position: absolute; right: 1.2rem; top: 1.2rem; text-decoration: none;" href="">
+                <div class="menu-button-link-close">
+                    <i class="bi bi-x-lg" style="font-size: 30px;"></i>
+                </div>
+            </a>
+            
+            <div class="offcanvas-body" style="background-color: transparent; padding-top: 8rem;">
+            
+                <div class="d-flex justify-content-center align-items-start flex-wrap flex-column" style="margin-top: 1rem; row-gap: 2.5rem;">
+
+                    <a class="menu-sezione" href="/index.html">HOME</a>
+                    <a class="menu-sezione" href="/contatti.html">CONTATTI</a>
+                    <a class="menu-sezione" href="/chisiamo.html">CHI SIAMO</a>
+                    <a class="menu-sezione dropdown-toggle" href="/servizi.html" id="serviziLink">SERVIZI</a>
+
+                    <button id="lang_btn" type="button" style="display: block !important;">
+                        <a href="/eng/services/ApplicationSecurity/CodeReview_eng.html"><img class="lang_flag" src="/assets/Flags/eng_flag.png" alt=""></a>
+                    </button>
+
+                    <div id="serviziDiv" style="display: none;">
+                        <div class="d-flex justify-content-center align-items-start flex-column mt-4 pb-5" style="gap: 2.1rem;">
+
+                            <!-- <hr class="dropdown-divider"></hr> -->
+
+                            <a class="menu-sottosezione-categoria" href="/servizi.html?category=ethical-hacking">Ethical Hacking</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/EthicalHacking/PenetrationTest.html">Penetration Test</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/EthicalHacking/RedTeamAssessment.html">Red Team Assessment</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/EthicalHacking/PurpleTeamAssessment.html">Purple Team Assessment</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/EthicalHacking/SocialEngineeringAssessment.html">Social Engineering Assessment</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/EthicalHacking/StrongPasswordAudit.html">Strong Password Audit</a>
+
+                            <a class="menu-sottosezione-categoria" href="/servizi.html?category=application-security">Application Security</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/ApplicationSecurity/CodeReview.html">Code Review</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/ApplicationSecurity/WebApplicationSecurityAssessment.html">Web Application Security Assessment</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/ApplicationSecurity/HardwareDeviceSecurityAssessment.html">Hardware Device Security Assessment (IoT)</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/ApplicationSecurity/MobileApplicationSecurityAssessment.html">Mobile Application Security Assessment</a>
+
+                            <a class="menu-sottosezione-categoria" href="/servizi.html?category=compliance">Compliance</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/Compliance/VulnerabilityAssessment.html">Vulnerability Assessment</a>
+
+                            <a class="menu-sottosezione-categoria" href="/servizi.html?category=digital-forensics">Digital Forensics</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/DigitalForensics/IndaginiDigitali.html">Indagini Digitali</a>
+                            <a class="menu-sottosezione" href="/assets/servizi/DigitalForensics/MalwareAnalysis.html">Malware Analysis</a>
+
+                            <a class="menu-sottosezione-categoria menu-sottosezione-categoria-redirect " href="/servizi.html">Vai alla pagina dei servizi <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- [Dropdown Offcanvas] -->
+                    <script>
+                    document.getElementById("serviziLink").addEventListener("click", function (e) {
+                        e.preventDefault(); // Previene il comportamento predefinito del link
+                        toggleServizi();
+                    });
+
+                    function toggleServizi() {
+                        var serviziDiv = document.getElementById("serviziDiv");
+                        if (serviziDiv.style.display === "none" || serviziDiv.style.display === "") {
+                        serviziDiv.style.display = "block";
+                        } else {
+                        serviziDiv.style.display = "none";
+                        }
+                    }
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div Navbar -->
+        <div id="main-nav" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" class="w-100 d-flex justify-content-between align-items-center fixed-top" style="background-color: var(--secondario); z-index: 999; gap: 1.2rem; padding-block: 1.1rem; padding-inline: 2.1rem;">
+        
+                    <!-- [Logo] -->
+                    <div class="d-flex flex-row justify-content-center align-items-center" style="gap: 10px;">
+                        <a href="/index.html">
+                            <img id="logo" src="/assets/LogoDefinitivo/LogoDefinitivoo.png" style="mix-blend-mode: normal; width: 387px; height: auto;" alt="">
+                        </a>
+                    </div>
+            
+                    <!-- [Links] -->
+                    <div id="navbar-link-container" class="d-flex justify-content-between align-items-center gap-5">
+                        <!-- Home -->
+                        <div class="nav-container"><h3><a class="uplinkup nav-link" href="/index.html">Home</a></h3></div>
+                        <!-- Servizi -->
+                        <h3>
+                            <div class="nav-container dropdown-center">
+                                <a class="uplinkup nav-link btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servizi
+                                </a>
+                                
+                                <ul class="dropdown-menu">
+                                    
+                                    <!-- [Servizi dropdown container] -->
+                                    <div class="d-flex justify-content-between align-items-start flex-row w-100">
+        
+                                        <!-- [Illustrazione] -->
+                                        <div id="dropdown-illustration" style="background-image: url(/assets/Backgrounds/DropdownService-backgrounds/CategoryEH.png) !important; transition: all ease-in-out 0.2s !important; background-position: center; background-size: cover; width: 40%; height: 28rem; background-image: url(/assets/Backgrounds/DropdownService-backgrounds/wireless-pen.png) ;"></div>
+        
+                                        <!-- [Categoria 1] -->
+                                        <div class="dropdown-service-container" style="display: flex; flex-direction: column; justify-content: start; height: 28rem; padding-top: 2rem !important;">
+                                            
+                                            <div>
+                                                <li><a id="item-category" class="dropdown-item" href="/servizi.html?category=ethical-hacking">Ethical Hacking</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/EthicalHacking/PenetrationTest.html">Penetration Test</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/EthicalHacking/RedTeamAssessment.html">Red Team Assessment</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/EthicalHacking/PurpleTeamAssessment.html">Purple Team Assessment</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/EthicalHacking/SocialEngineeringAssessment.html">Social Engineering Assessment</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/EthicalHacking/StrongPasswordAudit.html">Strong Password Audit</a></li>
+                                            </div>
+        
+                                            <li style="margin-top: 2.22rem;"><hr class="dropdown-divider"></li>
+        
+                                            <div>
+                                                <li><a id="item-category" class="dropdown-item" href="/servizi.html?category=compliance">Compliance</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/Compliance/VulnerabilityAssessment.html">Vulnerability Assessment</a></li>
+                                            </div>
+                                            <!-- <li><a class="dropdown-item" href="servizi.html#s-iot-security">Wireless Assessment</a></li> -->
+                                        </div>
+        
+                                        <!-- [Categoria 2] -->
+                                        <div class="dropdown-service-container" style="display: flex; flex-direction: column; justify-content: space-between; height: 28rem; padding-top: 2rem !important; padding-right: 2rem !important;">
+                                            <div>
+                                                <li><a id="item-category" class="dropdown-item" href="/servizi.html?category=application-security">Application Security</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/ApplicationSecurity/CodeReview.html">Code Review</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/ApplicationSecurity/WebApplicationSecurityAssessment.html">Web Application <br> Security Assessment</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/ApplicationSecurity/HardwareDeviceSecurityAssessment.html">Hardware Device <br> Security Assessment (IoT)</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/ApplicationSecurity/MobileApplicationSecurityAssessment.html">Mobile Application <br> Security Assessment</a></li>
+                                            </div>
+        
+                                            <li><hr class="dropdown-divider"></li>
+        
+                                            <div>
+                                                <li><a id="item-category" class="dropdown-item" href="/servizi.html?category=digital-forensics">Digital Forensics</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/DigitalForensics/IndaginiDigitali.html">Indagini Digitali</a></li>
+                                                <li><a class="dropdown-item" href="/assets/servizi/DigitalForensics/MalwareAnalysis.html">Malware Analysis</a></li>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <!-- [Vai alla pagina generale] -->
+                                    <div class="d-flex justify-content-center align-items-center flex-wrap w-100" style="background-color: var(--green);">
+        
+                                        <a id="dropdown-redirect" href="/servizi.html" class="py-3 text-center w-100 text-decoration-none"><span" class="dark-button-span">Vai alla pagina dei servizi <i class="bi bi-arrow-right"></i></span></a>
+        
+                                    </div>
+                                </ul>
+                            </div>
+                        </h3>
+                        <div class="nav-container"><h3><a class="uplinkup nav-link" href="/chisiamo.html">Chi siamo</a></h3></div>
+                    </div>
+            
+                    <!-- [Buttons] -->
+                    <div class="d-flex justify-content-between align-items-center gap-4">
+                        <button id="lang_btn" type="button">
+                            <a href="/eng/services/ApplicationSecurity/CodeReview_eng.html"><img class="lang_flag" src="/assets/Flags/eng_flag.png" alt=""></a>
+                        </button>
+                        <a id="contact-button" style="text-decoration: none;" href="/contatti.html"><div class="nav-button-link"><span class="dark-button-span">Contattaci</span></div></a>
+                        <a id="menu-button" data-bs-toggle="offcanvas" href="#menuLaterale" role="button" aria-controls="menuLaterale" style="text-decoration: none;" href=""><div class="menu-button-link">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/wgwcqouc.json"
+                                trigger=""
+                                colors="primary:#fffdfa,secondary:#fffdfa"
+                                style="width:30px;height:30px">
+                            </lord-icon></div></a>
+                        
+                    </div>
+    
+        </div> 
+
+            <!-- On Scroll Navbar -->
+            <script type="text/javascript">
+                var lastScrollTop = 0;
+                var delta = 350; // Distanza di scroll per far riapparire la navbar
+                var scrolledPast100 = false; // Flag per indicare se si è superato lo scroll di 100
+            
+                window.addEventListener("scroll", function () {
+                    var navbar = document.getElementById("main-nav");
+                    var scrollTop = window.scrollY;
+            
+                    if (scrollTop > 150) {
+                        if (!scrolledPast100) {
+                            // Scroll oltre il punto di 100
+                            scrolledPast100 = true;
+                            navbar.classList.add("nav-hidden");
+                        }
+            
+                        if (scrollTop > lastScrollTop) {
+                            // Scroll verso il basso
+                            navbar.classList.remove("nav-visible");
+                        } else {
+                            // Scroll verso l'alto
+                            navbar.classList.add("nav-visible");
+                        }
+                    } else {
+                        // Scroll al di sotto del punto di 100
+                        if (scrolledPast100) {
+                            scrolledPast100 = false;
+                            navbar.classList.remove("nav-hidden", "nav-visible");
+                        }
+                    }
+            
+                    lastScrollTop = scrollTop;
+                });
+            </script>
+
+        <!-- div Main -->
+        <div id="s-home" class="w-100 h-auto d-flex justify-content-start align-items-start s-home-about flex-column" style="background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-CodeReview.webp);">
+
+            <!-- [Scritta Iniziale] -->
+            <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" id="home-text-container" class="flex-column d-flex justify-content-start align-items-start" style="gap: 1.2rem; width: 85% !important;">
+                
+                <!-- [Scritta] -->
+                <h6 data-aos="fade-left" data-aos-duration="1000" class="rischi-etiquette text-start">
+                    APPLICATION SECURITY</h6>
+                <h1 class="servicehome-maintitle" style="text-align: start; color: var(--secondario);">
+                    Code Review</h1>
+                <h4 class="servicehome-subtitle" style="text-align: start; color: var(--secondario) !important;"> 
+                    La sicurezza parte dai sorgenti</h4>
+
+            </div>
+
+        </div>
+
+        <!-- div Descrizione -->
+        <div id="s-chisiamo" class="d-flex justify-content-center align-items-center flex-column" style="background-color: var(--secondario); padding-inline: 6.1rem; padding-block: 8rem;">
+                
+            <!-- In cosa consiste -->
+            <div class="wrapper">
+                <h2 class="chisiamo-maintitle w-100 text-start" style="margin-bottom: 4rem;">
+                    >_ In cosa consiste
+                </h2>
+
+                <h2 class="chisiamo-subtitle w-100 text-start">
+                    La Code Review è una valutazione dettagliata e rigorosa del codice sorgente 
+                    delle vostre applicazioni, al fine di vulnerabilità, errori di programmazione 
+                    e potenziali backdoor inserite più o meno inconsapevolmente dal team di sviluppo.
+
+                    <br><br>
+
+                    In piena flessibilità il servizio può essere eseguito una tantum, o periodico, 
+                    integrandolo nel ciclo di sviluppo dei vostri applicativi, analizzando in modo 
+                    incrementale ogni nuovo commit effettuato, al fine di garantire che il vostro 
+                    software sia costruito su basi solide e resista agli attacchi informatici, 
+                    senza esporre a rischi il sistema informativo dei vostri clienti.                    
+
+                </h2>
+        
+            </div>
+
+            <!-- Carousel Steps -->
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+
+                <div id="timelineCarousel" class="carousel slide" data-bs-ride="true" style="width: 100%; max-width: 1250px !important; height: 50%; border: none !important;">
+                
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+    
+                    <div class="carousel-inner" style="height: 400px !important">
+    
+                        <div class="carousel-item active">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 1</span> 
+                                <span class="carousel-slide-title">Nuova superficie d'attacco</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 2</span> 
+                                <span class="carousel-slide-title">Test di Regressione</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 3</span> 
+                                <span class="carousel-slide-title">Ricerca Vulnerabilità</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 4</span> 
+                                <span class="carousel-slide-title">Classificazione Criticità</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 5</span> 
+                                <span class="carousel-slide-title">Risoluzione</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-container">
+                                <span class="carousel-etiquette">STEP 6</span> 
+                                <span class="carousel-slide-title">Release Candidate</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#timelineCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+    
+                    <button class="carousel-control-next" type="button" data-bs-target="#timelineCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+    
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="wrapper">
+                <div class="d-flex justify-content-start align-items-center w-100 flex-wrap-reverse" style="margin-top: 5rem; gap: 2rem;">
+                    <a href="/servizi.html#s-service-reference" style="text-decoration: none;"><div class="nav-button-link home-link"><span class="light-button-span"><i class="bi bi-arrow-left"></i> Altri Servizi</span></div></a>
+                    <a href="mailto:vendite@ethsec.com?subject=Richiesta%20offerta%20per%20servizio:%20Code%20Review" id="contact-button" class="service-contact-button" style="text-decoration: none;">
+                        <div class="nav-button-link"><span class="dark-button-span">Scrivici per maggiori informazioni</span></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Cambio immagini al dropdown -->
+    <script>
+        // Funzione per precaricare l'immagine
+        function preloadImage(imageSrc) {
+            const img = new Image();
+            img.src = imageSrc;
+        }
+
+        // Associazioni tra URL dei servizi e percorso delle immagini corrispondenti
+        const serviceImages = {
+
+            // Ethical Hacking
+            '/servizi.html#EthicalHacking': '/assets/Backgrounds/DropdownService-backgrounds/CategoryEH.png',
+            '/assets/servizi/EthicalHacking/PenetrationTest.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-PenetrationTest.png',
+            '/assets/servizi/EthicalHacking/RedTeamAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-RedTeamAssessment.png',
+            '/assets/servizi/EthicalHacking/InsiderThreatSimulation.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-InsiderThreatSimulation.png',
+            '/assets/servizi/EthicalHacking/PurpleTeamAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-PurpleTeamAssessment.png',
+            '/assets/servizi/EthicalHacking/SocialEngineeringAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-SocialEngineeringAssessment.png',
+            '/assets/servizi/EthicalHacking/StrongPasswordAudit.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-StrongPasswordAudit.png',
+
+            // Compliance
+            '/servizi.html#Compliance': '/assets/Backgrounds/DropdownService-backgrounds/CategoryC.png',
+            '/assets/servizi/Compliance/VulnerabilityAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/C-VulnerabilityAssessment.png',
+            '/assets/servizi/Compliance/RansomwareResilienceAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/C-RansomwareResilienceAssessment.png',
+
+            // Application Security
+            '/servizi.html#ApplicationSecurity': '/assets/Backgrounds/DropdownService-backgrounds/CategoryAS.png',
+            '/assets/servizi/ApplicationSecurity/CodeReview.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-CodeReview.png',
+            '/assets/servizi/ApplicationSecurity/WebApplicationSecurityAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-WebApplicationSecurityAssessment.png',
+            '/assets/servizi/ApplicationSecurity/HardwareDeviceSecurityAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-HardwareDeviceSecurityAssessment.png',
+            '/assets/servizi/ApplicationSecurity/MobileApplicationSecurityAssessment.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-MobileApplicationSecurityAssessment.png',
+
+            // Digital Forensics
+            '/servizi.html#DigitalForensics': '/assets/Backgrounds/DropdownService-backgrounds/CategoryDF.png',
+            '/assets/servizi/DigitalForensics/IndaginiDigitali.html': '/assets/Backgrounds/DropdownService-backgrounds/DF-IndaginiDigitali.png',
+            '/assets/servizi/DigitalForensics/MalwareAnalysis.html': '/assets/Backgrounds/DropdownService-backgrounds/DF-MalwareAnalysis.png',
+        };
+
+        // Precarica tutte le immagini
+        Object.values(serviceImages).forEach(imageSrc => {
+            preloadImage(imageSrc);
+        });
+
+        // Cambio dello sfondo
+        function changeBackgroundImageWithTransition(imageSrc) {
+            const dropdownIllustration = document.getElementById('dropdown-illustration');
+            dropdownIllustration.style.opacity = '0'; // Nascondi l'elemento con una transizione di fade out
+            setTimeout(() => {
+                dropdownIllustration.style.backgroundImage = `url(${imageSrc})`;
+                dropdownIllustration.style.opacity = '1'; // Mostra l'elemento con una transizione di fade in
+            });
+        }
+
+        // Eventi "mouseover" per ciascun link di servizio
+        const serviceLinks = document.querySelectorAll('.dropdown-item');
+
+        // Assegna gli eventi "mouseover" a ciascun link di servizio
+        serviceLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                const linkHref = link.getAttribute('href');
+                const imageSrc = serviceImages[linkHref];
+                if (imageSrc) {
+                    changeBackgroundImageWithTransition(imageSrc);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+<footer id="s-footer" style="background-color: var(--secondario);">
+
+
+    <!-- [div Credits] -->
+    <div id="footer-credits" style="background-color: var(--secondario); padding: 1.2rem;" class="w-100 h-auto d-flex justify-content-around align-items-center flex-wrap">
+
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">P.IVA/CF: 04465560987, REA: BS - 616749, SDI: M5UXCR1</h5>
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">© 2023 ETHICAL SECURITY S.r.l. - Riproduzione Riservata</h5>
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">Credits: Giulio Brunelli</h5>
+
+    </div>
+
+</footer>
+
+<!-- AOS -->
+<script> AOS.init(); </script>
+
+<!-- Image by <a href="https://www.freepik.com/free-vector/teamwork-concept-landing-page_5168260.htm?query=about%20us#from_view=detail_alsolike">Freepik</a> -->
+<!-- <a href="https://lordicon.com/">Icons by Lordicon.com</a> -->
+
+</html>

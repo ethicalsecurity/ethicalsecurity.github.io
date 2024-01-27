@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ethical Security - Services</title>
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/Style/mainstyle.css">
+    <link rel="stylesheet" href="/assets/Style/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--- icons
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--- fonts
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/Fonts/Kollektif/stylesheet.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/assets/LogoDefinitivo/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Sezione Principale -->
+    <section>
+        
+        <!-- Sidebar Menu -->
+        <div class="offcanvas offcanvas-start overflow-auto w-100" tabindex="1" id="menuLaterale" aria-labelledby="menuLateraleLabel" style="z-index: 9999; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+            <a id="menu-button" data-bs-toggle="offcanvas" href="#menuLaterale" role="button" aria-controls="menuLaterale" style="width: min-content; position: absolute; right: 1.2rem; top: 1.2rem; text-decoration: none;" href="">
+                <div class="menu-button-link-close">
+                    <i class="bi bi-x-lg" style="font-size: 30px;"></i>
+                </div>
+            </a>
+            
+            <div class="offcanvas-body" style="background-color: transparent; padding-top: 8rem;">
+            
+                <div class="d-flex justify-content-center align-items-start flex-wrap flex-column" style="margin-top: 1rem; row-gap: 2.5rem;">
+
+                    <a class="menu-sezione" href="/eng/index_eng.html">HOME</a>
+                    <a class="menu-sezione" href="/eng/contact_us_eng.html">CONTACT</a>
+                    <a class="menu-sezione" href="/eng/about_us_eng.html">ABOUT US</a>
+                    <a class="menu-sezione dropdown-toggle" href="/eng/services_eng.html" id="serviziLink">SERVICES</a>
+
+                    <button id="lang_btn" type="button" style="display: block !important;">
+                        <a href="/servizi.html"><img class="lang_flag" src="/assets/Flags/ita_flag.png" alt=""></a>
+                    </button>
+
+                    <div id="serviziDiv" style="display: none;">
+                        <div class="d-flex justify-content-center align-items-start flex-column mt-4 pb-5" style="gap: 2.1rem;">
+
+                            <!-- <hr class="dropdown-divider"></hr> -->
+
+                            <a class="menu-sottosezione-categoria" href="/eng/services_eng.html?category=ethical-hacking">Ethical Hacking</a>
+                            <a class="menu-sottosezione" href="/eng/services/EthicalHacking/PenetrationTest_eng.html">Penetration Test</a>
+                            <a class="menu-sottosezione" href="/eng/services/EthicalHacking/RedTeamAssessment_eng.html">Red Team Assessment</a>
+                            <a class="menu-sottosezione" href="/eng/services/EthicalHacking/PurpleTeamAssessment_eng.html">Purple Team Assessment</a>
+                            <a class="menu-sottosezione" href="/eng/services/EthicalHacking/SocialEngineeringAssessment_eng.html">Social Engineering Assessment</a>
+                            <a class="menu-sottosezione" href="/eng/services/EthicalHacking/StrongPasswordAudit_eng.html">Strong Password Audit</a>
+
+                            <a class="menu-sottosezione-categoria" href="/eng/services_eng.html?category=application-security">Application Security</a>
+                            <a class="menu-sottosezione" href="/eng/services/ApplicationSecurity/CodeReview_eng.html">Code Review</a>
+                            <a class="menu-sottosezione" href="/eng/services/ApplicationSecurity/WebApplicationSecurityAssessment_eng.html">Web Application Security Assessment</a>
+                            <a class="menu-sottosezione" href="/eng/services/ApplicationSecurity/HardwareDeviceSecurityAssessment_eng.html">Hardware Device Security Assessment (IoT)</a>
+                            <a class="menu-sottosezione" href="/eng/services/ApplicationSecurity/MobileApplicationSecurityAssessment_eng.html">Mobile Application Security Assessment</a>
+
+                            <a class="menu-sottosezione-categoria" href="/eng/services_eng.html?category=compliance">Compliance</a>
+                            <a class="menu-sottosezione" href="/eng/services/Compliance/VulnerabilityAssessment_eng.html">Vulnerability Assessment</a>
+
+                            <a class="menu-sottosezione-categoria" href="/eng/services_eng.html?category=digital-forensics">Digital Forensics</a>
+                            <a class="menu-sottosezione" href="/eng/services/DigitalForensics/DigitalInvestigations_eng.html">Digital Investigations</a>
+                            <a class="menu-sottosezione" href="/eng/services/DigitalForensics/MalwareAnalysis_eng.html">Malware Analysis</a>
+
+                            <a class="menu-sottosezione-categoria menu-sottosezione-categoria-redirect " href="/eng/services_eng.html">Go to Services Page <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- [Dropdown Offcanvas] -->
+                    <script>
+                    document.getElementById("serviziLink").addEventListener("click", function (e) {
+                        e.preventDefault(); // Prevents the default link behavior
+                        toggleServizi();
+                    });
+
+                    function toggleServizi() {
+                        var serviziDiv = document.getElementById("serviziDiv");
+                        if (serviziDiv.style.display === "none" || serviziDiv.style.display === "") {
+                            serviziDiv.style.display = "block";
+                        } else {
+                            serviziDiv.style.display = "none";
+                        }
+                    }
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div id="main-nav" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" class="w-100 d-flex justify-content-between align-items-center fixed-top" style="z-index: 999; gap: 1.2rem; padding-top: 2.1rem; padding-inline: 2.1rem;">
+            
+            <!-- [Logo] -->
+            <div class="d-flex flex-row justify-content-center align-items-center" style="gap: 10px;">
+                <a href="/eng/index_eng.html">
+                    <img id="logo" src="/assets/LogoDefinitivo/LogoDefinitivoo.png" style="mix-blend-mode: normal; width: 387px; height: auto;" alt="">
+                </a>
+            </div>
+
+            <!-- [Links] -->
+            <div id="navbar-link-container" class="d-flex justify-content-between align-items-center gap-5">
+                <!-- Home -->
+                <div class="nav-container"><h3><a class="uplinkup nav-link" href="/eng/index_eng.html">Home</a></h3></div>
+                <!-- Services -->
+                <h3>
+                    <div class="nav-container dropdown-center">
+                        <a class="uplinkup nav-link btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <!-- [Services dropdown container] -->
+                            <div class="d-flex justify-content-between align-items-start flex-row w-100">
+
+                                <!-- [Illustration] -->
+                                <div id="dropdown-illustration" style="background-image: url(/assets/Backgrounds/DropdownService-backgrounds/CategoryEH.png) !important; transition: all ease-in-out 0.2s !important; background-position: center; background-size: cover; width: 40%; height: 28rem; background-image: url(/assets/Backgrounds/DropdownService-backgrounds/wireless-pen.png) ;"></div>
+
+                                <!-- [Category 1] -->
+                                <div class="dropdown-service-container" style="display: flex; flex-direction: column; justify-content: start; height: 28rem; padding-top: 2rem !important;">
+                                    
+                                    <div>
+                                        <li><a id="item-category" class="dropdown-item" href="/eng/services_eng.html?category=ethical-hacking">Ethical Hacking</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/EthicalHacking/PenetrationTest_eng.html">Penetration Test</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/EthicalHacking/RedTeamAssessment_eng.html">Red Team Assessment</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/EthicalHacking/PurpleTeamAssessment_eng.html">Purple Team Assessment</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/EthicalHacking/SocialEngineeringAssessment_eng.html">Social Engineering Assessment</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/EthicalHacking/StrongPasswordAudit_eng.html">Strong Password Audit</a></li>
+                                    </div>
+
+                                    <li style="margin-top: 2.22rem;"><hr class="dropdown-divider"></li>
+
+                                    <div>
+                                        <li><a id="item-category" class="dropdown-item" href="/eng/services_eng.html?category=compliance">Compliance</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/Compliance/VulnerabilityAssessment_eng.html">Vulnerability Assessment</a></li>
+                                    </div>
+                                </div>
+
+                                <!-- [Category 2] -->
+                                <div class="dropdown-service-container" style="display: flex; flex-direction: column; justify-content: space-between; height: 28rem; padding-top: 2rem !important; padding-right: 2rem !important;">
+                                    <div>
+                                        <li><a id="item-category" class="dropdown-item" href="/eng/services_eng.html?category=application-security">Application Security</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/ApplicationSecurity/CodeReview_eng.html">Code Review</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/ApplicationSecurity/WebApplicationSecurityAssessment_eng.html">Web Application <br> Security Assessment</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/ApplicationSecurity/HardwareDeviceSecurityAssessment_eng.html">Hardware Device <br> Security Assessment (IoT)</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/ApplicationSecurity/MobileApplicationSecurityAssessment_eng.html">Mobile Application <br> Security Assessment</a></li>
+                                    </div>
+
+                                    <li><hr class="dropdown-divider"></li>
+
+                                    <div>
+                                        <li><a id="item-category" class="dropdown-item" href="/eng/services_eng.html?category=digital-forensics">Digital Forensics</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/DigitalForensics/DigitalInvestigations_eng.html">Digital Investigations</a></li>
+                                        <li><a class="dropdown-item" href="/eng/services/DigitalForensics/MalwareAnalysis_eng.html">Malware Analysis</a></li>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- [Go to general page] -->
+                            <div class="d-flex justify-content-center align-items-center flex-wrap w-100" style="background-color: var(--green);">
+
+                                <a id="dropdown-redirect" href="/eng/services_eng.html" class="py-3 text-center w-100 text-decoration-none"><span" class="dark-button-span">Go to Services Page <i class="bi bi-arrow-right"></i></span></a>
+
+                            </div>
+                        </ul>
+                    </div>
+                </h3>
+                <div class="nav-container"><h3><a class="uplinkup nav-link" href="/eng/about_us_eng.html">About Us</a></h3></div>
+            </div>
+
+            <!-- [Buttons] -->
+            <div class="d-flex justify-content-between align-items-center gap-4">
+
+                <button id="lang_btn" type="button">
+                    <a href="/servizi.html"><img class="lang_flag" src="/assets/Flags/ita_flag.png" alt=""></a>
+                </button>
+                
+                <a id="contact-button" style="text-decoration: none;" href="/eng/contact_us_eng.html"><div class="nav-button-link"><span class="dark-button-span">Contact Us</span></div></a>
+                <a id="menu-button" data-bs-toggle="offcanvas" href="#menuLaterale" role="button" aria-controls="menuLaterale" style="text-decoration: none;" href=""><div class="menu-button-link">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/wgwcqouc.json"
+                        trigger=""
+                        colors="primary:#fffdfa,secondary:#fffdfa"
+                        style="width:30px;height:30px">
+                    </lord-icon></div></a>
+                
+            </div>
+
+        </div>
+
+            <!-- On Scroll Navbar -->
+            <script type="text/javascript">
+                var lastScrollTop = 0;
+                var delta = 350; // Distanza di scroll per far riapparire la navbar
+                var scrolledPast100 = false; // Flag per indicare se si è superato lo scroll di 100
+            
+                window.addEventListener("scroll", function () {
+                    var navbar = document.getElementById("main-nav");
+                    var scrollTop = window.scrollY;
+            
+                    if (scrollTop > 150) {
+                        if (!scrolledPast100) {
+                            // Scroll oltre il punto di 100
+                            scrolledPast100 = true;
+                            navbar.classList.add("nav-hidden");
+                        }
+            
+                        if (scrollTop > lastScrollTop) {
+                            // Scroll verso il basso
+                            navbar.classList.remove("nav-visible");
+                        } else {
+                            // Scroll verso l'alto
+                            navbar.classList.add("nav-visible");
+                        }
+                    } else {
+                        // Scroll al di sotto del punto di 100
+                        if (scrolledPast100) {
+                            scrolledPast100 = false;
+                            navbar.classList.remove("nav-hidden", "nav-visible");
+                        }
+                    }
+            
+                    lastScrollTop = scrollTop;
+                });
+            </script>
+
+        <!-- div Absolute Illustration -->
+        <div class="position-absolute w-100" style="top: 3rem; height: 50rem; overflow: hidden;">
+            <img id="servicehome-illustration"  data-aos="fade-right" data-aos-delay="300" data-aos-duration="700" src="/assets/Illustrations/cybersecurity2.png" alt="security-image" style="z-index: 1; right: 4.5rem; width: 40%; position: absolute; height: auto;">
+        </div>
+
+        <!-- div Main -->
+        <div id="s-home" style="padding-top: 18rem; padding-bottom: 20rem; padding-inline: 4.1rem;" class="w-100 h-auto d-flex justify-content-start align-items-center">
+
+            <!-- [Scritta Iniziale] -->
+            <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" id="home-text-container" class="flex-column d-flex justify-content-start align-items-start" style="gap: 1.2rem; width: 75%;">
+                
+                <!-- [Scritta] -->
+                <h6 data-aos="fade-left" data-aos-duration="1000" class="rischi-etiquette text-start">OUR SERVICES</h6>
+                <h1 class="home-maintitle" style="text-align: start;">We <span class="h-green">help you</span> stay <span class="h-green">secure</span></h1>
+
+            </div>
+
+        </div>
+
+        <!-- div Sottotitolo -->
+        <div id="s-service-reference" data-aos-once="true" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" class="w-100 h-auto d-flex align-items-start justify-content-center flex-column" style="row-gap: 2rem; padding-inline: 4.1rem; ">
+            <h2 class="w-100 service-maintitle">What we do <span class="h-underline">best</span></h2>
+        </div>
+
+
+        <!-- box-corsi -->
+        <style>
+            .rounded {
+                border-radius: 28px !important;
+            }
+            .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+                background-color: var(--green) !important;
+                color: var(--secondario) !important;
+                box-shadow: 2px 2px 30px var(--green-light);
+            }
+            .box-servizio {display: flex; justify-content: center; align-items: center; height: 45px; padding-bottom: 5px;}
+            .testo-categoria {padding: 0.2rem !important; padding-inline: 2rem !important; text-transform: capitalize; align-items: center; text-align: start; font-family: 'kollektifregular' !important; color: var(--dark) !important; font-size: min(max(28px), 5vw) !important;}
+        </style>
+
+        <!-- div Servizi 01 - tabs [Desktop Version] -->
+        <div id="s-service-showcase" class="container-fluid p-5" style="margin-bottom: 42px;">
+            <div class="tab-class text-center">
+                
+                <!-- [Categorie] -->
+                <ul style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; width: 100%; background-color: var(--secondario);" class="nav nav-pills d-none d-md-inline-flex justify-content-around text-uppercase  mb-5 p-4">
+                    <li class="box-servizio">
+                        <a id="btn-ethical-hacking" class="nav-link testo-categoria" data-bs-toggle="pill" href="#tab-ethical-hacking_eng">Ethical Hacking</a>
+                    </li>
+                    <li class="box-servizio">
+                        <a id="btn-application-security" class="nav-link testo-categoria" data-bs-toggle="pill" href="#tab-application-security_eng">Application Security</a>
+                    </li>
+                    <li class="box-servizio">
+                        <a id="btn-compliance" class="nav-link testo-categoria" data-bs-toggle="pill" href="#tab-compliance_eng">Compliance</a>
+                    </li>
+                    <li class="box-servizio">
+                        <a id="btn-digital-forensics" class="nav-link testo-categoria" data-bs-toggle="pill" href="#tab-digital-forensics_eng">Digital Forensics</a>
+                    </li>
+                </ul>
+
+                <!-- [Tabs] -->
+                <div class="tab-content">
+                    
+                    <!-- [Ethical Hacking] -->
+                    <div id="tab-ethical-hacking_eng" class="tab-pane fade p-0">
+                    
+                        <!-- div Servizi -->
+                        <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+                        
+                            <!-- [Penetration Test] -->
+                            <div id="PenetrationTest" class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-PenetrationTest.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                        
+                                <div class="service-card-content">
+                        
+                                    <h4>Penetration Test</h4>
+                                    <h6>Do you want to be the first to discover <span style="font-style: italic;">your vulnerabilities?</span></h6>
+                        
+                                </div>
+                        
+                                <div class="service-card-link">
+                                    <a href="services/EthicalHacking/PenetrationTest_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                        
+                            </div>
+
+                            <!-- [Red Team Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-RedTeamAssessment.webp); background-color: var(--card-bg-light) !important;
+                            background-blend-mode: soft-light !important;">
+                        
+                                <div class="service-card-content">
+                        
+                                    <h4>Red Team Assessment</h4>
+                                    <h6>Challenge yourself with the Red Team Assessment and get ready to face any digital threat.</h6>
+                        
+                                </div>
+                        
+                                <div class="service-card-link">
+                                    <a href="services/EthicalHacking/RedTeamAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                        
+                            </div>
+                        
+                            <!-- [Purple Team Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-PurpleTeamAssessment.webp); background-color: var(--card-bg-light) !important;
+                            background-blend-mode: soft-light !important;">
+                        
+                                <div class="service-card-content">
+                        
+                                    <h4>Purple Team Assessment</h4>
+                                    <h6>Join forces for unbeatable defense and uncompromising cybersecurity.</h6>
+                        
+                                </div>
+                        
+                                <div class="service-card-link">
+                                    <a href="services/EthicalHacking/PurpleTeamAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                        
+                            </div>
+
+                            <!-- [Social Engineering Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-SocialEngineeringAssessment.webp); background-color: var(--card-bg-light) !important;
+                            background-blend-mode: soft-light !important;">
+                        
+                                <div class="service-card-content">
+                        
+                                    <h4>Social Engineering Assessment</h4>
+                                    <h6>Your weak point? The human factor. Discover how to defend yourself.</h6>
+                        
+                                </div>
+                        
+                                <div class="service-card-link">
+                                    <a href="services/EthicalHacking/SocialEngineeringAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                        
+                            </div>
+
+                            <!-- [Strong Password Audit] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-StrongPasswordAudit.webp); background-color: var(--card-bg-light) !important;
+                            background-blend-mode: soft-light !important;">
+                        
+                                <div class="service-card-content">
+                        
+                                    <h4>Strong Password Audit</h4>
+                                    <h6>A good day starts with strong passwords.</h6>
+                        
+                                </div>
+                        
+                                <div class="service-card-link">
+                                    <a href="services/EthicalHacking/StrongPasswordAudit_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                
+                    <!-- [Application Security] -->
+                    <div id="tab-application-security_eng" class="tab-pane fade p-0">
+                        
+                        <!-- div Servizi -->
+                        <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                            <!-- [Code Review] -->
+                            <div id="CodeReview" class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-CodeReview.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Code Review</h4>
+                                    <h6>Security is in the source code.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/ApplicationSecurity/CodeReview_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- [Web Application Security Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-WebApplicationSecurityAssessment.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Web Application Security Assessment</h4>
+                                    <h6>Protect your virtual doors.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/ApplicationSecurity/WebApplicationSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- [Hardware Device Security Assessment (IoT)] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-HardwareDeviceSecurityAssessment\(IoT\).webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Hardware Device Security Assessment (IoT)</h4>
+                                    <h6>Where there is technology, there are bugs.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/ApplicationSecurity/HardwareDeviceSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- [Mobile Application Security Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-MobileApplicationSecurityAssessment.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Mobile Application Security Assessment</h4>
+                                    <h6>360-degree security.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/ApplicationSecurity/MobileApplicationSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- [Compliance] -->
+                    <div id="tab-compliance_eng" class="tab-pane fade p-0">
+                        
+                        <!-- div Servizi -->
+                        <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                            <!-- [Vulnerability Assessment] -->
+                            <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/C-VulnerabilityAssessment.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Vulnerability Assessment</h4>
+                                    <h6>Are your patches installed correctly?</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/Compliance/VulnerabilityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- [Digital Forensics] -->
+                    <div id="tab-digital-forensics_eng" class="tab-pane fade p-0">
+                        
+                        <!-- div Servizi -->
+                        <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                            <!-- [Indagini Digitali] -->
+                            <div class="service-card minicard" style="background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/DF-IndaginiDigitali.webp); background-color: var(--card-bg) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Digital Investigations</h4>
+                                    <h6>Discover the truth.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/DigitalForensics/DigitalInvestigations_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- [Malware Analysis] -->
+                            <div class="service-card minicard" style="background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/DF-MalwareAnalysis.png); background-color: var(--card-bg-light) !important;
+                            background-blend-mode: soft-light !important;">
+                                <div class="service-card-content">
+                                    <h4>Malware Analysis</h4>
+                                    <h6>To get answers, you just need to know how to read them.</h6>
+                                </div>
+                                <div class="service-card-link">
+                                    <a href="services/DigitalForensics/MalwareAnalysis_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- [Gestore Tabs] -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+
+                    // Estrai il valore del parametro "category" dall'URL della pagina di destinazione
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const category = urlParams.get('category');
+                
+                    // Se "category" non è definito o è vuoto, imposta il valore predefinito su "ethical-hacking"
+                    const defaultCategory = "ethical-hacking";
+                    const isDefaultCategory = !category || category === defaultCategory; // Variabile di controllo
+
+                    const selectedCategory = isDefaultCategory ? defaultCategory : category;
+                
+                    // Cerca gli elementi <a> con l'ID corrispondente e aggiungi la classe "active"
+                    const targetElement = document.getElementById(`btn-${selectedCategory}`);
+                    if (targetElement) {
+                    targetElement.classList.add('active');
+                    }
+                
+                    // Cerca gli elementi <div> delle tab con l'ID corrispondente e aggiungi le classi "active" e "show"
+                    const tabContentElement = document.getElementById(`tab-${selectedCategory}_eng`);
+                    if (tabContentElement) {
+                    tabContentElement.classList.add('active', 'show');
+                    }
+                
+                    if (urlParams.get('category')) {
+                    // Sposta la pagina alla sezione con ID "s-service-reference"
+                    const sServiceReference = document.getElementById("s-service-reference");
+                    if (sServiceReference) {
+                        sServiceReference.scrollIntoView({ behavior: "smooth" });
+                    }
+                    }
+
+                    // Cerca gli elementi <div> degli accordion con l'ID corrispondente e aggiungi le classi "active" e "show"
+                    const contentContentElement = document.getElementById(`content-${selectedCategory}`);
+                    if (contentContentElement) {
+                    contentContentElement.classList.add('show');
+                    
+                    // Effettua lo scrolling solo se non è stato utilizzato il valore predefinito
+                    if (!isDefaultCategory) {
+                        contentContentElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                    }
+
+                });
+
+                </script>
+
+            </div>
+            
+        </div>
+
+        <!-- div Servizi 02 - accordion [Smartphone Version] -->
+        <div id="accordion-service-showcase" class="accordion w-100" style="padding-inline: 4.1rem; margin-bottom: 8rem;">
+
+            <!-- [Ethical Hacking] -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingOne" style="background-color: var(--secondario) !important;">
+                    <button id="accordion-ethical-hacking" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-ethical-hacking" aria-expanded="false" aria-controls="content-ethical-hacking">
+                        <h2 class="w-100 accordion-title" style="padding-block: 4rem;"><span style="background-color: var(--green); border-radius: 0.375rem; padding-block: 1rem; padding-inline: 1rem; color: var(--secondario);">Ethical Hacking</span></h2>
+                        <i style="color: var(--green) !important;" class="accordion-icon bi bi-caret-up"></i>
+                    </button>
+                </h2>
+
+                <div id="content-ethical-hacking" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-service-showcase">
+                    <!-- div Servizi -->
+                    <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                        <!-- [Penetration Test] -->
+                        <div id="PenetrationTest" class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-PenetrationTest.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+
+                            <div class="service-card-content">
+
+                                <h4>Penetration Test</h4>
+                                <h6>Want to be the first to discover <span style="font-style: italic;">your vulnerabilities?</span>.</h6>
+
+                            </div>
+
+                            <div class="service-card-link">
+                                <a href="services/EthicalHacking/PenetrationTest_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+
+                        </div>
+
+                        <!-- [Red Team Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-RedTeamAssessment.webp); background-color: var(--card-bg-light) !important;
+                        background-blend-mode: soft-light !important;">
+
+                            <div class="service-card-content">
+
+                                <h4>Red Team Assessment</h4>
+                                <h6>Challenge yourself with the Red Team Assessment and get ready to face any digital threat.</h6>
+
+                            </div>
+
+                            <div class="service-card-link">
+                                <a href="services/EthicalHacking/RedTeamAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+
+                        </div>
+
+                        <!-- [Purple Team Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-PurpleTeamAssessment.webp); background-color: var(--card-bg-light) !important;
+                        background-blend-mode: soft-light !important;">
+
+                            <div class="service-card-content">
+
+                                <h4>Purple Team Assessment</h4>
+                                <h6>Join forces for unbeatable defense and uncompromising cybersecurity.</h6>
+
+                            </div>
+
+                            <div class="service-card-link">
+                                <a href="services/EthicalHacking/PurpleTeamAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+
+                        </div>
+
+                        <!-- [Social Engineering Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-SocialEngineeringAssessment.webp); background-color: var(--card-bg-light) !important;
+                        background-blend-mode: soft-light !important;">
+
+                            <div class="service-card-content">
+
+                                <h4>Social Engineering Assessment</h4>
+                                <h6>Your weak point? The human factor. Discover how to defend yourself.</h6>
+
+                            </div>
+
+                            <div class="service-card-link">
+                                <a href="services/EthicalHacking/SocialEngineeringAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+
+                        </div>
+
+                        <!-- [Strong Password Audit] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/EH-StrongPasswordAudit.webp); background-color: var(--card-bg-light) !important;
+                        background-blend-mode: soft-light !important;">
+
+                            <div class="service-card-content">
+
+                                <h4>Strong Password Audit</h4>
+                                <h6>A good day starts with strong passwords.</h6>
+
+                            </div>
+
+                            <div class="service-card-link">
+                                <a href="services/EthicalHacking/StrongPasswordAudit_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- [Application Security] -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingTwo" style="background-color: var(--secondario);">
+                    <button id="accordion-application-security" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-application-security" aria-expanded="false" aria-controls="content-application-security">
+                        <h2 class="w-100 accordion-title" style="padding-block: 4rem;"><span style="background-color: var(--green); border-radius: 0.375rem; padding-block: 1rem; padding-inline: 1rem; color: var(--secondario);">Application Security</span></h2>
+                        <i style="color: var(--green) !important;" class="accordion-icon bi bi-caret-down"></i>
+                    </button>
+                </h2>
+
+                <div id="content-application-security" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-service-showcase">
+                    <!-- div Servizi -->
+                    <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                        <!-- [Code Review] -->
+                        <div id="CodeReview" class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-CodeReview.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Code Review</h4>
+                                <h6>Security is in the source code.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/ApplicationSecurity/CodeReview_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- [Web Application Security Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-WebApplicationSecurityAssessment.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Web Application Security Assessment</h4>
+                                <h6>Protect your virtual gates.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/ApplicationSecurity/WebApplicationSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- [Hardware Device Security Assessment (IoT)] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-HardwareDeviceSecurityAssessment\(IoT\).webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Hardware Device Security Assessment (IoT)</h4>
+                                <h6>Where there is technology, there are bugs.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/ApplicationSecurity/HardwareDeviceSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- [Mobile Application Security Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/AS-MobileApplicationSecurityAssessment.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Mobile Application Security Assessment</h4>
+                                <h6>360° security.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/ApplicationSecurity/MobileApplicationSecurityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- [Compliance] -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingThree" style="background-color: var(--secondario);">
+                    <button id="accordion-compliance"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-compliance" aria-expanded="false" aria-controls="content-compliance">
+                        <h2 class="w-100 accordion-title" style="padding-block: 4rem;"><span style="background-color: var(--green); border-radius: 0.375rem; padding-block: 1rem; padding-inline: 1rem; color: var(--secondario);">Compliance</span></h2>
+                        <i style="color: var(--green) !important;" class="accordion-icon bi bi-caret-down"></i>
+                    </button>
+                </h2>
+
+                <div id="content-compliance" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-service-showcase">
+                    <!-- div Servizi -->
+                    <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                        <!-- [Vulnerability Assessment] -->
+                        <div class="service-card minicard" style="background-color: var(--darkest); background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/C-VulnerabilityAssessment.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Vulnerability Assessment</h4>
+                                <h6>Are your patches installed correctly?</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/Compliance/VulnerabilityAssessment_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- [Digital Forensics] -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingFour" style="background-color: var(--secondario);">
+                    <button id="accordion-digital-forensics" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-digital-forensics" aria-expanded="false" aria-controls="content-digital-forensics">
+                        <h2 class="w-100 accordion-title" style="padding-block: 4rem;"><span style="background-color: var(--green); border-radius: 0.375rem; padding-block: 1rem; padding-inline: 1rem; color: var(--secondario);">Digital Forensics</span></h2>
+                        <i style="color: var(--green) !important;" class="accordion-icon bi bi-caret-down"></i>
+                    </button>
+                </h2>
+
+                <div id="content-digital-forensics" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion-service-showcase">
+                    <!-- div Servizi -->
+                    <div id="s-service" class="d-flex justify-content-between align-items-center flex-wrap" style="row-gap: 2rem; padding-block: 3rem; padding-inline: 4.1rem; background-color: transparent; width: 100; height: auto;">
+
+                        <!-- [Indagini Digitali] -->
+                        <div class="service-card minicard" style="background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/DF-IndaginiDigitali.webp); background-color: var(--card-bg) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Digital Investigations</h4>
+                                <h6>Discover the truth.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/DigitalForensics/DigitalInvestigations_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- [Malware Analysis] -->
+                        <div class="service-card minicard" style="background-image: url(/assets/Backgrounds/ServiceCard-backgrounds/DF-MalwareAnalysis.png); background-color: var(--card-bg-light) !important;
+                        background-blend-mode: soft-light !important;">
+                            <div class="service-card-content">
+                                <h4>Malware Analysis</h4>
+                                <h6>To get answers, you just need to know how to read them.</h6>
+                            </div>
+                            <div class="service-card-link">
+                                <a href="services/DigitalForensics/MalwareAnalysis_eng.html"><i class="bi bi-arrow-right-square-fill" style="font-size: min(max(40px), 6.2vw); height: auto; color: var(--secondario);"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Cambio immagini al dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Funzione per precaricare l'immagine
+            function preloadImage(imageSrc) {
+                const img = new Image();
+                img.src = imageSrc;
+            }
+
+            // Associazioni tra URL dei servizi e percorso delle immagini corrispondenti
+            const serviceImages = {
+                // Ethical Hacking
+                '/eng/services_eng.html?category=ethical-hacking': '/assets/Backgrounds/DropdownService-backgrounds/CategoryEH.png',
+                '/eng/services/EthicalHacking/PenetrationTest_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-PenetrationTest.png',
+                '/eng/services/EthicalHacking/RedTeamAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-RedTeamAssessment.png',
+                '/eng/services/EthicalHacking/PurpleTeamAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-PurpleTeamAssessment.png',
+                '/eng/services/EthicalHacking/SocialEngineeringAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-SocialEngineeringAssessment.png',
+                '/eng/services/EthicalHacking/StrongPasswordAudit_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/EH-StrongPasswordAudit.png',
+                // Compliance
+                '/eng/services_eng.html?category=compliance': '/assets/Backgrounds/DropdownService-backgrounds/CategoryC.png',
+                '/eng/services/Compliance/VulnerabilityAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/C-VulnerabilityAssessment.png',
+                // Application Security
+                '/eng/services_eng.html?category=application-security': '/assets/Backgrounds/DropdownService-backgrounds/CategoryAS.png',
+                '/eng/services/ApplicationSecurity/CodeReview_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-CodeReview.png',
+                '/eng/services/ApplicationSecurity/WebApplicationSecurityAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-WebApplicationSecurityAssessment.png',
+                '/eng/services/ApplicationSecurity/HardwareDeviceSecurityAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-HardwareDeviceSecurityAssessment.png',
+                '/eng/services/ApplicationSecurity/MobileApplicationSecurityAssessment_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/AS-MobileApplicationSecurityAssessment.png',
+                // Digital Forensics
+                '/eng/services_eng.html?category=digital-forensics': '/assets/Backgrounds/DropdownService-backgrounds/CategoryDF.png',
+                '/eng/services/DigitalForensics/DigitalInvestigations_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/DF-IndaginiDigitali.png',
+                '/eng/services/DigitalForensics/MalwareAnalysis_eng.html': '/assets/Backgrounds/DropdownService-backgrounds/DF-MalwareAnalysis.png',
+            };
+
+            // Precarica tutte le immagini
+            Object.values(serviceImages).forEach(imageSrc => {
+                preloadImage(imageSrc);
+            });
+
+            // Cambio dello sfondo
+            function changeBackgroundImageWithTransition(imageSrc) {
+                const dropdownIllustration = document.getElementById('dropdown-illustration');
+                dropdownIllustration.style.opacity = '0'; // Nascondi l'elemento con una transizione di fade out
+                setTimeout(() => {
+                    dropdownIllustration.style.backgroundImage = `url(${imageSrc})`;
+                    dropdownIllustration.style.opacity = '1'; // Mostra l'elemento con una transizione di fade in
+                });
+            }
+
+            // Eventi "mouseover" per ciascun link di servizio
+            const serviceLinks = document.querySelectorAll('.dropdown-item');
+
+            // Assegna gli eventi "mouseover" a ciascun link di servizio
+            serviceLinks.forEach(link => {
+                link.addEventListener('mouseover', () => {
+                    const linkHref = link.getAttribute('href');
+                    const imageSrc = serviceImages[linkHref];
+                    if (imageSrc) {
+                        changeBackgroundImageWithTransition(imageSrc);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+<footer id="s-footer" style="background-color: var(--secondario);">
+
+
+    <!-- [div Credits] -->
+    <div id="footer-credits" style="background-color: var(--secondario); padding: 1.2rem;" class="w-100 h-auto d-flex justify-content-around align-items-center flex-wrap">
+
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">VAT: IT04465560987, REA: BS - 616749, SDI: M5UXCR1</h5>
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">© 2023 ETHICAL SECURITY S.r.l. - Copyright Reserved</h5>
+        <h5 class="footer-subtitle" style="padding-top: 10px; color: var(--primario) !important;">Credits: Giulio Brunelli</h5>
+
+    </div>
+
+</footer>
+
+
+<!-- AOS -->
+<script> AOS.init(); </script>
+
+<!-- Accordion Icon -->
+<script>
+    
+// Funzione per cambiare l'icona dell'accordion
+function toggleAccordionIcon(element, isExpanded) {
+  const icon = element.querySelector(".accordion-icon");
+  if (isExpanded) {
+    icon.classList.remove("bi-caret-down");
+    icon.classList.add("bi-caret-up");
+  } else {
+    icon.classList.remove("bi-caret-up");
+    icon.classList.add("bi-caret-down");
+  }
+}
+
+// Aggiungi l'evento show.bs.collapse per gestire l'apertura dell'accordion item
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  item.addEventListener("show.bs.collapse", function () {
+    // Chiudi tutti gli accordion aperti tranne quello corrente
+    const expandedItems = document.querySelectorAll(".accordion-item.show");
+    expandedItems.forEach((expandedItem) => {
+      if (expandedItem !== item) {
+        expandedItem.querySelector(".accordion-button").click();
+      }
+    });
+
+    // Cambia l'icona dell'accordion corrente
+    toggleAccordionIcon(item.querySelector(".accordion-button"), true);
+  });
+
+  // Aggiungi l'evento hide.bs.collapse per gestire la chiusura dell'accordion item
+  item.addEventListener("hide.bs.collapse", function () {
+    // Cambia l'icona dell'accordion corrente
+    toggleAccordionIcon(item.querySelector(".accordion-button"), false);
+  });
+
+  // Inizialmente, chiudi tutti gli accordion tranne quello con la classe "show"
+  if (!item.classList.contains("show")) {
+    const accordionButton = item.querySelector(".accordion-button");
+    const accordionIcon = accordionButton.querySelector(".accordion-icon");
+    accordionButton.setAttribute("aria-expanded", "false");
+    accordionButton.classList.add("collapsed");
+    accordionIcon.classList.remove("bi-caret-up");
+    accordionIcon.classList.add("bi-caret-down");
+  }
+});
+
+</script>  
+
+<!-- <a href="https://lordicon.com/">Icons by Lordicon.com</a> -->
+
+</html>
