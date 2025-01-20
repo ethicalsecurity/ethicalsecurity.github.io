@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ************************************************************* -->
+    <!-- * eth-sec - info -->
+    <!-- ************************************************************* -->
+    
+    <!-- page title -->
+    <title>Ethical Security - Info</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/style/mainstyle.css">
+    <link rel="stylesheet" href="/src/style/responsive.css">
+
+    <!-- js -->
+    <script src="/src/js/dynamic-elements-en.js"></script>
+    <script src="/src/js/flyout-dynamic-en.js"></script>
+    <script src="/src/js/navbar-collapse.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- favicon -->
+    <link rel="icon" href="/src/logo/favicon.webp" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- header ================ -->
+    
+    <!-- navbar * -->
+    <div id="main-navbar" class="" data-page-goto="/info.html"></div>
+    
+    <!-- offcanvas * -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="main-offcanvas" aria-labelledby="main-offcanvasLabel"></div>
+
+    <!-- hero section -->
+    <div id="is-1" class="hero big-hero service" style="background-image: url(/src/img/bg/info-bg.webp);">
+
+        <div class="hero-container service">
+
+            <div class="hero-title-union">
+                <span id="hero-service-category" class="cateogry-indicator"><span class="title-indicator">> </span>INFORMATION</span>
+                <span id="hero-service-title" class="title">We are your best ally</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- content ================ -->
+     
+    <!-- who we are -->
+    <div id="is-2" class="general-section">
+
+        <div class="gen-section-1 first-section">
+            <div class="gs-1-title-content">
+
+                <div class="union-title-etiquette">
+    
+                    <span class="etiquette">WHO WE ARE</span>
+                    <span class="subtitle">The Ethical Security team</span>
+    
+                </div>
+    
+                <span class="text">
+                    Ethical Security S.r.l. is a company born from a group of professionals with a long-standing passion for cybersecurity and decades of professional experience in the field.
+                </span>
+    
+            </div>
+
+            <span class="text">
+                Our work consists of identifying critical issues in applications, IT systems, and networks; with the aim of allowing our clients to better protect themselves from the most advanced threats. To do this, we reproduce the behavior of real hostile actors, using customized tools and cutting-edge attack techniques.
+                <br><br>
+                We distinguish ourselves through our highly specialized expertise in the field of information security, developed from deep and continuous experiences with high-profile entities including credit institutions, multiutilities, and software houses in Italy and around the world.
+            </span>
+    
+            <div class="gs-1-attributes">
+    
+                <div class="attribute-card">
+    
+                    <span class="subtitle">15+</span>
+                    <span class="card-title disabled">Years of experience</span>
+    
+                </div>
+
+                <div class="attribute-card">
+    
+                    <span class="subtitle">25+</span>
+                    <span class="card-title disabled">Years of passion</span>
+    
+                </div>
+
+                <div class="attribute-card">
+    
+                    <span class="subtitle">200+</span>
+                    <span class="card-title disabled">Operations</span>
+    
+                </div>
+    
+            </div>
+    
+            <a class="secondary-btn" href="/en/services-en.html">What we can do for you <i data-feather="arrow-right"></i></a>
+        </div>
+
+    </div>
+
+    <!-- partnerships -->
+    <div id="is-3" class="general-section">
+
+        <div class="gen-section-2 reverse">
+
+            <div id="ip-02">
+                <img id="ip-02-illustration" src="/src/img/components/ip-02-illustration.svg" alt="home-component-01">
+            </div>
+    
+            <div class="gs-2-content">
+    
+                <div class="union-title-etiquette">
+    
+                    <span class="etiquette">PARTNERSHIP</span>
+                    <span class="subtitle">Become our partner</span>
+    
+                </div>
+    
+                <span class="text">Becoming our partner means building a relationship of trust, where we work together to achieve common goals. We join forces, helping each other grow and face the challenges of the future.</span>
+    
+                <a id="collabora-btn" class="secondary-btn" href="#">Collaborate with us <i data-feather="arrow-right"></i></a>
+                <script>
+                    document.getElementById('collabora-btn').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var subject = encodeURIComponent('Collaboration request');
+                        var body = encodeURIComponent('Dear EthSec team,\n\nWe are interested in collaborating with you. We would like to discuss partnership possibilities.\n\nBest regards.');
+                        var mailtoLink = 'mailto:info@ethsec.com?subject=' + subject + '&body=' + body;
+                        window.location.href = mailtoLink;
+                    });
+                </script>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer ================= -->
+
+    <!-- cta * -->
+    <div id="cta-section" class="general-section"></div>
+
+    <!-- footer block -->
+    <div id="footer"></div>
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>

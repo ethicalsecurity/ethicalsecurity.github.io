@@ -1,0 +1,954 @@
+
+/* Dispositivi mobili con piccolo schermo */
+@media only screen and (max-width: 379px) {
+    :root {
+        --title: 64px;
+        --subtitle: 40px;
+        --etiquette: 18px;
+        --text: 18px;
+        --text-hero: 20px;
+        --primary-btn: 22px;
+        --secondary-btn: 18px;
+        --navbar-link: 18px;
+        --icon-link: 14px;
+        --card-title: 22px;
+        --service-title: 40px;
+        --credit-text: 14px;
+        --max-width: 100%;
+    }
+
+     /* navbar */
+
+     #main-navbar {
+        padding-inline: 30px;
+        padding-block: 20px;
+    }
+
+    #nav-logo {
+        height: 35px;
+    }
+
+    #main-navbar.collapsed {
+        padding-block: 20px;
+        transition: all ease .3s;
+    }
+    #main-navbar.collapsed #nav-logo{
+        height: 35px;
+        transition: all ease .3s;
+    }
+
+    #offcanvas-toggle {
+        display: flex;
+    }
+
+    .navbar-link-container {
+        display: none;
+    }
+
+    /* offcanvas */
+
+    #offcanvas-toggle {
+        height: fit-content;
+    }
+
+    .oc-cta-container .primary-btn {
+        width: 100%; 
+    }
+
+    
+    /* hero */
+
+    .hero {
+        padding-inline: 30px;
+    }
+
+    #hs-1 {
+        background-attachment: unset;
+    }
+
+    .hero.big-hero {
+        background-attachment: unset;
+        height: 610px; padding-block: 80px;
+    }
+    
+    .hero-container {
+        flex-direction: column; gap: 35px; align-items: start; justify-content: start;
+    }
+    .title {
+        line-height: 45px;
+    }
+    #big-hero-title {
+        height: 215px;
+        max-width: 90%;
+    }
+    
+    #big-hero-title::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: inherit;
+    }
+    .hero-cta-container {
+        width: 100%; max-width: 100%;
+    }
+    #home-hero-text {
+        max-width: 100%;
+    }
+
+    /* sections */
+
+    .subtitle {
+        line-height: 32px;
+    }
+
+    .gen-section-1 {
+        gap: 30px;
+    }
+
+    .gen-section-2 {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #hc-01, #ip-02 {
+        width: 100%; height: 250px;
+    }
+
+    #hc-01-illustration, #ip-02-illustration {
+        height: 70%;
+    }
+
+    .general-section {
+        padding-block: 80px;
+        padding-inline: 30px;
+    }
+
+    .gs-1-title-content {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .gs-1-title-content .text {
+        max-width: 90%;
+    }
+
+    .gs-1-attributes {
+        gap: 50px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .gs-1-attributes .attribute-card {
+        flex-basis: calc(50% - 25px);
+    }
+
+    .attribute-card {
+        flex: 1;
+    }
+    .attribute-card .feather {
+        width: 30px; stroke-width: 1.5px;
+    }
+
+    .gs-2-content {
+        flex: 1; max-width: 100%;
+    }
+
+    .content-section {
+        padding-inline: 30px;
+    }
+
+    .card-container-row {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+    }
+
+    .step-block.service {
+        flex-direction: column;
+        padding-block: 40px; align-items: start;
+    }
+
+    .gsss-title {
+        flex-direction: column; align-items: start;
+    }
+
+    .btn-union {
+        flex-direction: column;
+    }
+
+    .icon-title-union {
+        gap: 25px; flex-direction: column;
+    }
+
+    .contact-icon-action {
+        display: none;
+    }
+    .step-block.contact .card-title-union {
+        text-align: center;
+    }
+    .step-block.contact {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* cta */
+
+    #cta-section {
+        padding-inline: 0px;
+    }
+
+    .cta-container {
+        padding-inline: 50px;
+    }
+
+    #base-service-cta {
+        border-radius: 0px;
+        background-attachment: unset;
+        border-inline: none;
+    }
+
+    /* footer */
+
+    #main-footer {
+        padding-inline: 30px;
+        background-attachment: unset;
+    }
+
+    .footer-body {
+        flex-direction: column; gap: 80px;
+    }
+
+    .fb-link-container {
+        gap: 40px;
+    }
+
+    #credits {
+        flex-direction: column;
+        padding-inline: 40px;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+}
+
+/* Dispositivi mobili */
+@media only screen and (min-width: 380px) and (max-width: 479px) {
+    :root {
+        --title: 64px;
+        --subtitle: 40px;
+        --etiquette: 18px;
+        --text: 18px;
+        --text-hero: 20px;
+        --primary-btn: 22px;
+        --secondary-btn: 18px;
+        --navbar-link: 18px;
+        --icon-link: 14px;
+        --card-title: 22px;
+        --service-title: 40px;
+        --credit-text: 14px;
+        --max-width: 100%;
+    }
+
+     /* navbar */
+
+     #main-navbar {
+        padding-inline: 30px;
+        padding-block: 20px;
+    }
+
+    #nav-logo {
+        height: 35px;
+    }
+
+    #main-navbar.collapsed {
+        padding-block: 20px;
+        transition: all ease .3s;
+    }
+    #main-navbar.collapsed #nav-logo{
+        height: 35px;
+        transition: all ease .3s;
+    }
+
+    #offcanvas-toggle {
+        display: flex;
+    }
+
+    .navbar-link-container {
+        display: none;
+    }
+
+    /* offcanvas */
+
+    #offcanvas-toggle {
+        height: fit-content;
+    }
+
+    .oc-cta-container .primary-btn {
+        width: 100%; 
+    }
+
+    
+    /* hero */
+
+    .hero {
+        padding-inline: 30px;
+    }
+
+    #hs-1 {
+        background-attachment: unset;
+    }
+
+    .hero.big-hero {
+        background-attachment: unset;
+        height: 580px; padding-block: 80px;
+    }
+    
+    .hero-container {
+        flex-direction: column; gap: 35px; align-items: start; justify-content: start;
+    }
+    .title {
+        line-height: 45px;
+    }
+    #big-hero-title {
+        height: 185px;
+        max-width: 90%;
+    }
+    
+    #big-hero-title::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: inherit;
+    }
+    .hero-cta-container {
+        width: 100%; max-width: 100%;
+    }
+    #home-hero-text {
+        max-width: 100%;
+    }
+
+    /* sections */
+
+
+    .subtitle {
+        line-height: 32px;
+    }
+
+    .gen-section-1 {
+        gap: 50px;
+    }
+
+    .gen-section-2 {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #hc-01, #ip-02 {
+        width: 100%; height: 250px;
+    }
+
+    #hc-01-illustration, #ip-02-illustration {
+        height: 75%;
+    }
+
+    .general-section {
+        padding-block: 80px;
+        padding-inline: 30px;
+    }
+
+    .gs-1-title-content {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .gs-1-title-content .text {
+        max-width: 90%;
+    }
+
+    .gs-1-attributes {
+        gap: 50px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .gs-1-attributes .attribute-card {
+        flex-basis: calc(50% - 25px);
+    }
+
+    .attribute-card {
+        flex: 1;
+    }
+    .attribute-card .feather {
+        width: 30px; stroke-width: 1.5px;
+    }
+
+    .gs-2-content {
+        flex: 1; max-width: 100%;
+    }
+
+    .content-section {
+        padding-inline: 30px;
+    }
+
+    .card-container-row {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+    }
+
+    .step-block.service {
+        flex-direction: column;
+        padding-block: 40px; align-items: start;
+    }
+
+    .gsss-title {
+        flex-direction: column; align-items: start;
+    }
+
+    .btn-union {
+        flex-direction: column;
+    }
+
+    .icon-title-union {
+        gap: 25px; flex-direction: column;
+    }
+
+    .contact-icon-action {
+        display: none;
+    }
+    .step-block.contact .card-title-union {
+        text-align: center;
+    }
+    .step-block.contact {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* cta */
+
+    #cta-section {
+        padding-inline: 0px;
+    }
+
+    .cta-container {
+        padding-inline: 50px;
+    }
+
+    #base-service-cta {
+        border-radius: 0px;
+        background-attachment: unset;
+        border-inline: none;
+    }
+
+    /* footer */
+
+    #main-footer {
+        padding-inline: 30px;
+        background-attachment: unset;
+    }
+
+    .footer-body {
+        flex-direction: column; gap: 80px;
+    }
+
+    .fb-link-container {
+        gap: 40px;
+    }
+
+    #credits {
+        flex-direction: column;
+        padding-inline: 40px;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+}
+
+/* Smartphone */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    :root {
+        --title: 65px;
+        --subtitle: 32px;
+        --etiquette: 18px;
+        --text: 18px;
+        --text-hero: 20px;
+        --primary-btn: 22px;
+        --secondary-btn: 18px;
+        --navbar-link: 18px;
+        --icon-link: 14px;
+        --card-title: 22px;
+        --service-title: 40px;
+        --credit-text: 14px;
+        --max-width: 100%;
+    }
+
+    /* navbar */
+
+    #main-navbar {
+        padding-inline: 40px;
+        padding-block: 20px;
+    }
+
+    #nav-logo {
+        height: 35px;
+    }
+
+    #main-navbar.collapsed {
+        padding-block: 20px;
+        transition: all ease .3s;
+    }
+    #main-navbar.collapsed #nav-logo{
+        height: 35px;
+        transition: all ease .3s;
+    }
+
+    #offcanvas-toggle {
+        display: flex;
+    }
+
+    .navbar-link-container {
+        display: none;
+    }
+
+    /* offcanvas */
+
+    #main-offcanvas {
+        padding-inline: 40px;
+    }
+
+    #offcanvas-toggle {
+        height: fit-content;
+    }
+
+    
+    /* hero */
+
+    .hero {
+        padding-inline: 40px;
+    }
+
+    .hero.big-hero {
+        height: 600px;
+    }
+    
+    .hero-container {
+        flex-direction: column; gap: 55px; align-items: start; justify-content: start;
+    }
+    .title {
+        line-height: 45px; text-wrap: balance;
+    }
+    #big-hero-title {
+        height: 145px;
+    }
+    .hero-cta-container {
+        width: 100%; max-width: 100%;
+    }
+    #home-hero-text {
+        max-width: 100%;
+    }
+
+    /* sections */
+
+    .subtitle {
+        line-height: 45px;
+    }
+
+    .gen-section-1 {
+        gap: 30px;
+    }
+
+    .gen-section-2 {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #hc-01, #ip-02 {
+        width: 100%; height: 300px;
+    }
+
+    #hc-01-illustration, #ip-02-illustration {
+        height: 85%;
+    }
+
+    .general-section {
+        padding-block: 80px;
+        padding-inline: 40px;
+    }
+
+    .gs-1-title-content {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .gs-1-title-content .text {
+        max-width: 90%;
+    }
+
+    .gs-1-attributes {
+        gap: 50px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .gs-1-attributes .attribute-card {
+        flex-basis: calc(50% - 25px);
+    }
+
+    .attribute-card {
+        flex: 1;
+    }
+    .attribute-card .feather {
+        width: 30px; stroke-width: 1.5px;
+    }
+
+    .gs-2-content {
+        flex: 1; max-width: 100%;
+    }
+
+    .content-section {
+        padding-inline: 40px;
+    }
+
+    .card-container-row {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+    }
+
+    .step-block.service {
+        flex-direction: column;
+        padding-block: 40px; align-items: start;
+    }
+
+    .btn-union {
+        flex-direction: column;
+    }
+
+    /* cta */
+
+    #base-service-cta {
+        border-radius: 4px;
+    }
+
+    /* footer */
+
+    #main-footer {
+        padding-inline: 40px;
+    }
+
+    .footer-body {
+        flex-direction: column; gap: 80px;
+    }
+
+    .fb-link-container {
+        gap: 40px;
+    }
+
+    #credits {
+        flex-direction: column;
+        padding-inline: 40px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --title: 80px;
+        --subtitle: 45px;
+        --etiquette: 20px;
+        --text: 20px;
+        --text-hero: 22px;
+        --primary-btn: 26px;
+        --secondary-btn: 20px;
+        --navbar-link: 18px;
+        --icon-link: 15px;
+        --card-title: 22px;
+        --service-title: 50px;
+        --credit-text: 14px;
+        --max-width: 100%;
+    }
+
+    /* navbar */
+
+    #main-navbar {
+        padding-inline: 60px;
+    }
+
+    #offcanvas-toggle {
+        display: flex;
+    }
+
+    .navbar-link-container {
+        display: none;
+    }
+
+    /* offcanvas */
+
+    #main-offcanvas {
+        padding-inline: 60px;
+    }
+
+    #main-offcanvas {
+        padding-top: 180px;
+    }
+
+    
+    /* hero */
+
+    .hero {
+        padding-inline: 60px;
+    }
+
+    .hero.big-hero {
+        height: 650px;
+    }
+    
+    .hero-container {
+        flex-direction: column; gap: 25px; align-items: start; justify-content: start;
+    }
+    .title {
+        line-height: 60px; text-wrap: balance;
+    }
+    .hero-cta-container {
+        width: 100%; max-width: 100%;
+        flex-direction: row;
+    }
+    #home-hero-text {
+        max-width: 300px;
+    }
+
+    /* sections */
+
+    .subtitle {
+        line-height: 45px;
+    }
+
+    .gen-section-1 {
+        gap: 50px;
+    }
+    
+    .gen-section-2 {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #hc-01, #ip-02 {
+        width: 100%; height: 350px;
+    }
+
+    #hc-01-illustration, #ip-02-illustration {
+        height: 85%;
+    }
+
+    .general-section {
+        padding-block: 80px;
+        padding-inline: 60px;
+    }
+
+    .gs-1-title-content {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .gs-1-title-content .text {
+        max-width: 80%;
+    }
+
+    .gs-1-attributes {
+        gap: 50px;
+    }
+
+    .attribute-card {
+        flex: 1;
+    }
+
+    .gs-2-content {
+        flex: 1; max-width: 100%;
+    }
+
+    .content-section {
+        padding-inline: 60px;
+    }
+
+    .card-container-row {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+    }
+
+    .step-block.service {
+        flex-direction: column;
+        padding-block: 50px; align-items: start;
+    }
+
+    /* cta */
+
+    #base-service-cta {
+        border-radius: 4px;
+    }
+
+    /* footer */
+
+    #main-footer {
+        padding-inline: 60px;
+    }
+
+    .footer-body {
+        flex-direction: column; gap: 80px;
+    }
+
+    #credits {
+        padding-inline: 60px;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) and (max-width: 1285px) {
+    :root {
+        --title: 100px;
+        --subtitle: 50px;
+        --etiquette: 16px;
+        --text: 20px;
+        --text-hero: 24px;
+        --primary-btn: 28px;
+        --secondary-btn: 20px;
+        --navbar-link: 18px;
+        --icon-link: 15px;
+        --card-title: 28px;
+        --service-title: 55px;
+        --credit-text: 15px;
+        --max-width: 1000px;
+    }
+
+    /* navbar */
+
+    #main-navbar {
+        padding-inline: 60px;
+    }
+
+    #offcanvas-toggle {
+        display: flex;
+    }
+
+    .navbar-link-container {
+        display: none;
+    }
+
+    /* offcanvas */
+
+    #main-offcanvas {
+        padding-top: 180px;
+    }
+
+    
+    /* hero */
+
+    .hero {
+        padding-inline: 60px;
+    }
+
+    .hero.big-hero {
+        height: 650px;
+    }
+    
+    .hero-container {
+        flex-direction: column; gap: 25px; align-items: start; justify-content: start;
+    }
+    .title {
+        line-height: 65px; text-wrap: balance;
+    }
+    .hero-cta-container {
+        width: 100%; max-width: 100%;
+        flex-direction: row;
+    }
+    .text-hero {
+        max-width: 500px;
+    }
+
+    /* sections */
+
+    #hc-01 {
+        flex: 1;
+    }
+
+    .subtitle {
+        line-height: 45px;
+    }
+
+    .gen-section-2 {
+        gap: 50px;
+    }
+
+    .general-section {
+        padding-inline: 60px;
+    }
+
+    .gs-1-title-content {
+        gap: 100px;
+    }
+
+    .gs-2-content {
+        flex: 1;
+    }
+
+    .content-section {
+        padding-inline: 100px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Schermi grandi */
+@media only screen and (min-width: 1286px) {
+    :root {
+        --title: 122px;
+        --subtitle: 69.22px;
+        --etiquette: 22px;
+        --text: 22px;
+        --text-hero: 26px;
+        --primary-btn: 30px;
+        --secondary-btn: 22px;
+        --navbar-link: 20px;
+        --icon-link: 16px;
+        --card-title: 29.22px;
+        --service-title: 59.22px;
+        --credit-text: 16px;
+        --max-width: 1250px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .gs-1-card-container.reality-check {
+        flex-direction: row;
+    }
+
+    .step-block.reality-check .icon-title-union {
+        flex-direction: column; gap: 20px; justify-content: start; align-items: start;
+    }
+
+}
