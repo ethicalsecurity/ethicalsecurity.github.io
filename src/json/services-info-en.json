@@ -1,0 +1,195 @@
+{
+    "ethical-hacking": [
+        { 
+            "name": "Penetration Test", 
+            "description": "Do you want to be the first to discover your vulnerabilities?", 
+            "url": "/en/service-en.html?service-en=ethical-hacking.penetration-test", 
+            "first_content": "Our Penetration Test service consists of simulating an attack scenario on the company infrastructure, useful for highlighting critical issues in systems and processes to verify the effectiveness of existing defenses. The activity, which faithfully replicates the operational methods of a real adversary, involves operations of research and enumeration of company resources, identification of known and unknown vulnerabilities on different assets, and the use of social engineering techniques to weave targeted, customized, and as effective as possible attacks.\nThrough the use of these methodologies, we identify critical issues and put the client in a position to become aware of the measures necessary to reduce the impact of a potential cyber attack.", 
+            "second_content": "We work remotely and in total autonomy, with or without the principle of assume compromise, and with the utmost caution possible to avoid any type of disruption to production systems. Any conditions and constraints on the execution methods can be freely defined during the preliminary definition of the rules of engagement.", 
+            "steps": {
+                "step-1": { "tag": "KICKOFF", "name": "SCOPE", "content": "Definition of systems under examination and rules of engagement. Preparation and signing of the waiver document." },
+                "step-2": { "tag": "OSINT", "name": "PASSIVE ENUMERATION", "content": "Enumeration of employees, metadata, internet domains, compromised credentials, tenant or 365." },
+                "step-3": { "tag": "INTERNET", "name": "EXTERNAL PERIMETER", "content": "Active analysis of internet domains, password-based attacks. Network scans and search for known and unknown vulnerabilities on exposed services." },
+                "step-4": { "tag": "PHISHING", "name": "SOCIAL ENGINEERING", "content": "Definition of targets, pretexts, payloads, and phishing campaigns aimed at collecting credentials or accessing client systems." },
+                "step-5": { "tag": "INTRANET", "name": "INTERNAL NETWORK", "content": "Enumeration of systems, Active Directory, configurations, and vulnerabilities. Attacks aimed at privilege escalation on the local forest." },
+                "step-6": { "tag": "CLOUD", "name": "AZURE AD", "content": "Search for attack paths and attempts at escalation towards the highest Global Admin privileges." },
+                "step-7": { "tag": "REPORT", "name": "PRESENTATION OF RESULTS", "content": "Executive report, technical with analysis and details on the reproducibility of the emerged critical issues, classified with CWE and CVSS references." }
+            },
+            "background_url": "/src/img/bg/services-bg/penetration-test.webp"
+        },
+        { 
+            "name": "Red Team Assessment", 
+            "description": "Put yourself to the test, prepare to face any digital threat.", 
+            "url": "/en/service-en.html?service-en=ethical-hacking.red-team-assessment", 
+            "first_content": "The Red Team Assessment is an advanced simulation of cyber attacks, carried out by a security group external to your organization. This assessment uses the tactics of hackers, state actors, and military to safely and controllably test the effectiveness of your security measures. Gain a realistic view of your defenses and weaknesses.\nA Red Team Assessment activity draws from the principles of a penetration test and takes them to the next level. The fundamental difference lies in the approach, which involves multiple and continuous attack vectors and represents an opportunity for the company to become aware of its capabilities to confront, detect, and counter technologically advanced and innovative threats employed in the real world by the most notorious \"threat actors\".\nThe extended duration of the red team assessment service allows for increasing the level of realism of the simulation, enabling the exploitation of opportunity scenarios, implementing sophisticated attack techniques, precise and customized to the client's business reality, which is thus able to maintain high and continuous stimulation for the company personnel responsible for defense.", 
+            "steps": {
+                "step-1": { "tag": "KICKOFF", "name": "SCOPE", "content": "Definition of systems under examination and rules of engagement. Preparation and signing of the waiver document." },
+                "step-2": { "tag": "OSINT", "name": "PASSIVE ENUMERATION", "content": "Enumeration of employees, metadata, internet domains, compromised credentials, tenant or 365." },
+                "step-3": { "tag": "INTERNET", "name": "EXTERNAL PERIMETER", "content": "Active analysis of internet domains, password-based attacks. Network scans and search for known and unknown vulnerabilities on exposed services." },
+                "step-4": { "tag": "VECTOR DEFINITION", "name": "PLANNING", "content": "Attack vectors, phishing, vishing, smishing, and physical access to premises." },
+                "step-5": { "tag": "INTRANET", "name": "INTERNAL NETWORK", "content": "Enumeration of systems, Active Directory, configurations, and vulnerabilities. Attacks aimed at privilege escalation on the local forest." },
+                "step-6": { "tag": "CLOUD", "name": "AZURE AD", "content": "Search for attack paths and attempts at escalation towards the highest Global Admin privileges." },
+                "step-7": { "tag": "REPORT", "name": "PRESENTATION OF RESULTS", "content": "Executive report, technical with analysis and details on the reproducibility of the emerged critical issues, classified with CWE and CVSS references." }
+            },
+            "background_url": "/src/img/bg/services-bg/red-team-assessment.webp"
+        },
+        { 
+            "name": "Purple Team Assessment", 
+            "description": "Unite for an unbeatable defense and uncompromising cybersecurity.", 
+            "url": "/en/service-en.html?service-en=ethical-hacking.purple-team-assessment", 
+            "first_content": "The Purple Team Assessment represents a collaborative approach to the analysis process, bringing together your defense team (Blue Team) and our offensive security experts (Red Team). The objective of the activity is to verify and refine your ability to effectively detect and respond to individual techniques, chosen with a fully collaborative approach, among a series of test cases customized to your company's risk model; in order to cover every aspect of a typical cyber attack that could hit your reality.\nDuring the activity, the practical aspects of the phases of detection and response to cyber attacks will be analyzed, which may affect the information system as a whole, or individual high-risk components.", 
+            
+            "steps": {
+                "step-1": { "tag": "KICKOFF", "name": "THREAT MODELING", "content": "Evaluation of the company risk model." },
+                "step-2": { "tag": "SETUP", "name": "DEFINITION", "content": "Mapping of defenses under examination and preparation of test cases." },
+                "step-3": { "tag": "EXECUTION", "name": "ATTACK PHASE", "content": "Launch of attacks towards the selected individual test cases, collection of results and feedback from the attacker's perspective." },
+                "step-4": { "tag": "DEFENSE", "name": "RESULTS", "content": "For each attack, the results are analyzed and compared with the expectations of the defense team." },
+                "step-5": { "tag": "REPORT", "name": "CORRECTIVE SUGGESTIONS", "content": "Gap Analysis and executive and technical summary of the obtained results." }
+            },
+            "background_url": "/src/img/bg/services-bg/purple-team-assessment.webp"
+        },
+        { 
+            "name": "Social Engineering Assessment", 
+            "description": "Your weak point? The human component. Find out how to defend yourself.", 
+            "url": "/en/service-en.html?service-en=ethical-hacking.social-engineering-assessment", 
+            "first_content": "The Social Engineering Assessment is designed to test your security not only from a technical point of view but also from a human perspective. By simulating phishing attacks, manipulation, and social engineering, we will identify the behavioral vulnerabilities of your employees. Increasing awareness and training staff will be crucial to protect your most sensitive data.\nThe activity, especially if carried out cyclically following specific training courses, can be used both as a measure of awareness on the topic and as a tool to measure the progress of users' attack detection and reaction capabilities. We perform phishing simulations and other social engineering attacks aimed at exposing company resources, collecting statistical and precise feedback on the results.", 
+            "second_content": "", 
+            "steps": {
+                "step-1": { "tag": "KICKOFF", "name": "DEFINITION", "content": "and classification of users based on their level of exposure and risk. Choice of campaign pretexts in coordination with the client." },
+                "step-2": { "tag": "SETUP", "name": "PREPARATION", "content": "of campaigns and supporting backend systems." },
+                "step-3": { "tag": "EXECUTION", "name": "LAUNCH", "content": "of agreed campaigns and evidence sampling." },
+                "step-4": { "tag": "REPORT", "name": "PRESENTATION", "content": "Results and collected statistics." }
+            },
+            "background_url": "/src/img/bg/services-bg/social-engineering-assessment.webp"
+        },
+        { 
+            "name": "Strong Password Audit", 
+            "description": "A good day starts with good passwords.", 
+            "url": "/en/service-en.html?service-en=ethical-hacking.strong-password-audit", 
+            "first_content": "Security begins with a robust password. We analyze the quality and strength of passwords used by your employees and systems. With solid authentication, you will reduce the risk of unauthorized access and protect your digital assets from unwanted intrusions.\nThrough an in-depth password cracking activity, we are able to give you a complete statistical overview of the composition of your company's user passwords, and we will be able to answer the following questions:", 
+            "list": {
+                "list-1": { "content": "Do all passwords comply with the minimum complexity policies provided?" },
+                "list-2": { "content": "Are there groups of users more exposed than others?" },
+                "list-3": { "content": "How many of my users' passwords are secure?" },
+                "list-4": { "content": "Are passwords known to be compromised in use?" },
+                "list-5": { "content": "Are there trivial or easily predictable patterns?" },
+                "list-6": { "content": "What are the 10 most common passwords in the company?" }
+            },
+            "background_url": "/src/img/bg/services-bg/strong-password-audit.webp"
+        },
+        { 
+            "name": "Reality Check", 
+            "description": "A quick, light, and cost-effective analysis to discover your company's vulnerabilities.",
+            "url": "/en/reality-check-en.html", 
+            "background_url": "/src/img/bg/services-bg/reality-check.webp"
+        }
+    ],
+    "application-security": [
+        { 
+            "name": "Web Application Security Assessment", 
+            "description": "Protect your virtual doors.", 
+            "url": "/en/service-en.html?service-en=application-security.web-application-security-assessment", 
+            "first_content": "Your web applications are often the preferred target of cyber attacks. With the Web Application Security Assessment service, we perform a comprehensive security review of your web applications, identifying vulnerabilities such as SQL injection, cross-site scripting (XSS), and other threats according to <a class=\"text-link\" href= \"https://owasp.org/www-project-web-security-testing-guide/\">OWASP</a> guidelines. Thanks to this type of verification, you can have reasonable certainty that your applications are protected from intrusions and that your users' data is safe.\nWe analyze web applications and API services, through a graybox, blackbox, or <a class=\"text-link\" href=\"/en/service-en.html?service-en=application-security.code-review\">whitebox</a> approach. The results are classified using the categories of the <a class=\"text-link\" href=\"https://cwe.mitre.org/\">Common Weakness Enumeration</a> framework and their severity through the <a class=\"text-link\" href=\"https://www.first.org/cvss/\">Common Vulnerability Scoring System</a>", 
+            
+            "steps": {
+                "step-1": { "tag": "MAPPING", "name": "ENUMERATION", "content": "Application functionality and user interaction points, direct and indirect." },
+                "step-2": { "tag": "ANALYSIS", "name": "VULNERABILITY RESEARCH", "content": "Starting from OWASP Top 10, but not only" },
+                "step-3": { "tag": "SCORING", "name": "CRITICALITY CLASSIFICATION", "content": "Through Common Weakness Enumeration (CWE) and Common Vulnerability Scoring System (CVSS)." },
+                "step-4": { "tag": "REPORT", "name": "REMEDIATION", "content": "Identification of corrective measures and executive and technical reporting." }
+            },
+            "background_url": "/src/img/bg/services-bg/web-application-security-assessment.webp"
+        },
+        { 
+            "name": "Hardware Device Security Assessment", 
+            "description": "Where there's technology, there are bugs.", 
+            "url": "/en/service-en.html?service-en=application-security.hardware-device-security-assessment", 
+            "first_content": "In an increasingly integrated and connected world, the security of connected devices and their supporting infrastructure is essential to protect user data and service continuity from growing threats. Through our experience, we can help you evaluate and improve the security of your IoT products, identifying the risk model they are exposed to, taking into account all the backend infrastructure that supports and makes them operational; proposing targeted solutions to mitigate the risk of compromise.", 
+            "second_content": "We are able to carry out the assessment with maximum flexibility: either by adopting a completely blackbox approach, extracting and doing an in-depth reverse engineering of the firmware, or by transparently analyzing the product through an analysis of the source code of the proprietary software. We also evaluate the physical security measures present (e.g., anti-tamper) and the internet backend services supporting the product, such as web servers, APIs, CDN, etc. We suggest guidelines to improve the robustness of the device, with the aim of reducing the risk of compromise of the data and information it processes.", 
+            "steps": {
+                "step-1": { "tag": "PHYSICAL ANALYSIS", "name": "PHYSICAL INSPECTION", "content": "Evaluation of physical protection systems and anti-tamper." },
+                "step-2": { "tag": "ACQUISITION", "name": "PHYSICAL ATTACK", "content": "Opening the device, bypassing any security systems. Extraction of firmware from memory." },
+                "step-3": { "tag": "FIRMWARE ANALYSIS", "name": "REVERSE ENGINEERING", "content": "Or static code analysis, if available. Search for connection endpoints with backend services, hardcoded secrets, vulnerabilities, and backdoors." },
+                "step-4": { "tag": "BACKEND ANALYSIS", "name": "ASSESSMENT", "content": "of the backend infrastructure supporting the product (e.g., web APIs). Search for misconfigurations and vulnerabilities." },
+                "step-5": { "tag": "SOLUTIONS", "name": "CORRECTIVE SUGGESTIONS", "content": "and verification of critical issues." }
+            },
+            "background_url": "/src/img/bg/services-bg/hardware-device-security-assessment.webp"
+        },
+        { 
+            "name": "Mobile Application Security Assessment", 
+            "description": "360° security.", 
+            "url": "/en/service-en.html?service-en=application-security.mobile-application-security-assessment", 
+            "first_content": "The security analysis of a mobile application is fundamental to protect users, data, company resources, and reputation. It is a critical step in the mobile application development process and should be conducted regularly to maintain high security standards.\nMobile applications often collect and manage sensitive user data, such as personal information, payment data, and access credentials; data breaches can result in significant costs, reputational damage, and potential legal consequences for a company or organization. A security analysis can help identify and mitigate vulnerabilities that could lead to a data breach.", 
+            "second_content": "We identify the application's risk model. We conduct in-depth analysis activities both blackbox and through a hybrid approach that can go up to <a class=\"text-link\" href=\"/en/service-en.html?service-en=application-security.code-review\">source code review</a>. We identify and classify the critical issues found, providing effective guidelines for their resolution, we support the client in the cyclical process of managing development oriented towards the security of their mobile applications.", 
+            "steps": {
+                "step-1": { "tag": "STEP-1", "name": "ATTACK SURFACE DEFINITION" },
+                "step-2": { "tag": "STEP-2", "name": "STATIC ANALYSIS OR REVERSE ENGINEERING" },
+                "step-3": { "tag": "STEP-3", "name": "VULNERABILITY RESEARCH" },
+                "step-4": { "tag": "STEP-4", "name": "CLASSIFICATION AND IMPACT ASSESSMENT" },
+                "step-5": { "tag": "STEP-5", "name": "RESOLUTION" },
+                "step-6": { "tag": "STEP-6", "name": "RELEASE CANDIDATE" }
+            },
+            "background_url": "/src/img/bg/services-bg/mobile-application-security-assessment.webp"
+        },
+        { 
+            "name": "Code Review", 
+            "description": "Security starts from the source.", 
+            "url": "/en/service-en.html?service-en=application-security.code-review", 
+            "first_content": "Code Review is a detailed and rigorous evaluation of the source code of your applications, in order to identify vulnerabilities, programming errors, and potential backdoors inserted more or less unknowingly by the development team.\nWith full flexibility, the service can be performed once, or periodically, integrating it into the development cycle of your applications, incrementally analyzing each new commit made, in order to ensure that your software is built on solid foundations and resists cyber attacks, without exposing your customers' information system to risks.", 
+            
+            "steps": {
+                "step-1": { "tag": "STEP 1", "name": "NEW ATTACK SURFACE" },
+                "step-2": { "tag": "STEP 2", "name": "REGRESSION TESTING" },
+                "step-3": { "tag": "STEP 3", "name": "VULNERABILITY RESEARCH" },
+                "step-4": { "tag": "STEP 4", "name": "CRITICALITY CLASSIFICATION" },
+                "step-5": { "tag": "STEP 5", "name": "RESOLUTION" },
+                "step-6": { "tag": "STEP 6", "name": "RELEASE CANDIDATE" }
+            },
+            "background_url": "/src/img/bg/services-bg/code-review.webp"
+        }
+    ],
+    "compliance": [
+        { 
+            "name": "Vulnerability Assessment", 
+            "description": "Are your patches installed correctly?", 
+            "url": "/en/service-en.html?service-en=compliance.vulnerability-assessment", 
+            "first_content": "The Vulnerability Assessment evaluates the level of exposure to known vulnerabilities present in your infrastructure and systems. By identifying and classifying critical vulnerabilities, you can assess your update management process and make informed decisions to mitigate risks and ensure compliance with security standards.\nMany regulations and industry standards require organizations to regularly conduct vulnerability assessment activities on their systems and applications: For example, the General Data Protection Regulation (GDPR) in the European Union requires organizations to protect personal data; a vulnerability assessment in this regard can help demonstrate and ensure that data is adequately protected.\nA vulnerability assessment activity is an essential tool for ensuring regulatory compliance, protecting data and systems, and demonstrating that the company is taking adequate measures to mitigate security risks. It helps organizations meet regulatory requirements and maintain a secure and compliant environment over time.", 
+            "second_content": "The activity is carried out entirely remotely and in a non-invasive manner for the client's infrastructure. In agreement with the company's IT personnel, the reachability of the systems under test is verified. Systems and applications are checked through vulnerability assessment tools, comparing the collected information with databases of known criticalities. A report of the vulnerabilities found is provided along with resolution guidelines. The produced documentation can be used in contexts that require it for regulatory certification paths.", 
+            "steps": {
+                "step-1": { "tag": "KICKOFF", "name": "SCOPE", "content": "Definition of systems under examination and rules of engagement. Preparation and signing of the waiver document." },
+                "step-2": { "tag": "SETUP", "name": "CONFIGURATION", "content": "Network access and verification of reachability of systems under examination." },
+                "step-3": { "tag": "SCAN", "name": "SCANNING", "content": "Execution of automated scanning of systems for vulnerability search. Verification of results consistency." },
+                "step-4": { "tag": "REPORT", "name": "PRESENTATION OF RESULTS", "content": "Executive report with analysis of details of emerged vulnerabilities classified with CVSS references." }
+            },
+            "background_url": "/src/img/bg/services-bg/vulnerability-assessment.webp"
+        }
+    ],
+    "digital-forensic": [
+        { 
+            "name": "Digital Investigations", 
+            "description": "Discover the truth.", 
+            "url": "/en/service-en.html?service-en=digital-forensic.digital-investigations", 
+            "first_content": "Digital investigations are crucial for solving and understanding cases of security breaches, fraud, and other criminal activities in the digital world. We acquire, analyze, and interpret digital evidence from various computer devices (PCs, servers, mobile phones, or IoT devices), providing reliable results to support your legal actions or internal investigations.\nUsing methodologies compliant with the most rigorous standards dictated by computer forensics, we acquire and preserve sources of electronic evidence. We conduct a detailed analysis activity to answer the questions posed to us, producing a technical report that meticulously describes the various phases of the analysis and investigation process, clearly and comprehensibly presenting the results.", 
+            "background_url": "/src/img/bg/services-bg/digital-investigations.webp"
+        },
+        { 
+            "name": "Malware Analysis", 
+            "description": "To get answers, you just need to know how to read them.", 
+            "url": "/en/service-en.html?service-en=digital-forensic.malware-analysis", 
+            "first_content": "The service consists of an in-depth examination of software in order to understand in detail its behavior and define the damage it can cause. This activity is fundamental to determine the extent of a cyber incident following the initial response phase.", 
+            "second_content": "Collection of the malware sample:", 
+            "list": {
+                "list-1": { "content": "First Phase: consists of collecting the malware itself. This can be obtained from sources such as suspicious emails, infected websites, compromised systems" },
+                "list-2": { "content": "Dynamic and Behavioral Analysis: In this phase, the malware is executed in a controlled environment, known as a sandbox, to observe its behavior in real-time." },
+                "list-3": { "content": "Static Analysis: the binary code of the malware is statically analyzed to identify its functionalities and generate any indicators of compromise (IOCs)." },
+                "list-4": { "content": "Report Generation: At the end of the analysis activity, a technical report is produced that describes the evidence collected during the analysis phase: useful for understanding the risk to which the client has been exposed in the face of a potential infection." }
+            },
+            "steps": {
+                "step-1": { "tag": "EXTRACTION", "name": "SAMPLE ACQUISITION", "content": "Search and extraction of the sample from volatile memory or filesystem." },
+                "step-2": { "tag": "SANDBOX", "name": "DYNAMIC ANALYSIS", "content": "Filesystem interactions, network connections, system calls (...)." },
+                "step-3": { "tag": "REVERSE ENGINEERING", "name": "STATIC ANALYSIS", "content": "Reverse engineering of functions and creation of indicators of compromise (IOCs)." },
+                "step-4": { "tag": "REPORT", "name": "DESCRIPTION", "content": "in-depth of the software and its degree of danger. Indications on prevention and removal." }
+            },
+            "background_url": "/src/img/bg/services-bg/malware-analysis.webp"
+        }
+    ]
+}
